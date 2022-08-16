@@ -18,7 +18,7 @@ source .venv/bin/activate
   <li>Impact of contextual features on blame/diagnosis accuracy</li>
   <li>Blame/Diagnosis accuracy of different techniques</li>
 </ol>
-<p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that the accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
+<p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ---------------------------------
