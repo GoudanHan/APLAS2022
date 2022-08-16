@@ -23,7 +23,7 @@ source .venv/bin/activate
 
 ---------------------------------
 <h3>   1. Feature Matters </h3>
-<table align="center" cellpadding="15" width="100%">
+<table align="center" >
   <tr>
     <th></th>
     <th>Local Syn</th>
@@ -37,14 +37,12 @@ source .venv/bin/activate
   </tr>
   <tr>
     <th>sp14->sp14</th>
-    <th><pre>./print</pre></th>
-  </tr>
-    <th>sp14->fa15</th>
-    <th><pre>./loc1415</pre></th>
-    <th><pre>./s1415</pre></th>
-    <th><pre>./c1415</pre></th>
+<th><b>./loc1414_h</b></th><th><b>./s1414_h</b></th><th><b>./c1414_h</b></th><th><b>./t1414_h</b></th><th><b>./cs1414_h</b></th><th><b>./ts1414_h</b></th><th><b>./ct1414_h</b></th><th><b>./cts1414_h</b></th>
+  </tr>    <th>sp14->fa15</th>
+    <th><b>./loc1415_h</b></th><th><b>./s1415_h</b></th><th><b>./c1415_h</b></th><th><b>./t1415_h</b></th><th><b>./cs1415_h</b></th><th><b>./ts1415_h</b></th><th><b>./ct1415_h</b></th><th><b>./cts1415_h</b></th>
   </tr>
     <th>fa15->sp14</th>
+    <th><b>./loc1514_h</b></th><th><b>./s1514_h</b></th><th><b>./c1514_h</b></th><th><b>./t1514_h</b></th><th><b>./cs1514_h</b></th><th><b>./ts1514_h</b></th><th><b>./ct1514_h</b></th><th><b>./cts1514_h</b></th>
   </tr>
     <th>fa15->fa15</th>
   </tr>
