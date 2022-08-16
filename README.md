@@ -23,6 +23,26 @@ source .venv/bin/activate
 
 ---------------------------------
 <h3>   1. Feature Matters </h3>
+<br>
+<b>LOGISTIC</b>:
+<table align="center">
+  <tr>
+    <th></th>
+    <th>Local Syn</th>
+    <th>+S(ize)</th>
+    <th>+C(ontext)</th>
+    <th>+T(ype)</th>
+    <th>+C+S</th>
+    <th>+T+S</th>
+    <th>+C+T</th>
+    <th>+C+T+S</th>
+  </tr>
+  <tr><th>sp14->sp14</th><th><b>./loc1414_l</b></th><th><b>./s1414_l</b></th><th><b>./c1414_l</b></th><th><b>./t1414_l</b></th><th><b>./cs1414_l</b></th><th><b>./ts1414_l</b></th><th><b>./ct1414_l</b></th><th><b>./cts1414_l</b></th></tr>
+  <tr><th>sp14->fa15</th><th><b>./loc1415_l</b></th><th><b>./s1415_l</b></th><th><b>./c1415_l</b></th><th><b>./t1415_l</b></th><th><b>./cs1415_l</b></th><th><b>./ts1415_l</b></th><th><b>./ct1415_l</b></th><th><b>./cts1415_l</b></th></tr>
+  <tr><th>fa15->sp14</th><th><b>./loc1514_l</b></th><th><b>./s1514_l</b></th><th><b>./c1514_l</b></th><th><b>./t1514_l</b></th><th><b>./cs1514_l</b></th><th><b>./ts1514_l</b></th><th><b>./ct1514_l</b></th><th><b>./cts1514_l</b></th></tr>
+</table>
+
+<b>MLP-500 model:</b>
 <table align="center" >
   <tr>
     <th></th>
@@ -35,18 +55,10 @@ source .venv/bin/activate
     <th>+C+T</th>
     <th>+C+T+S</th>
   </tr>
-  <tr>
-    <th>sp14->sp14</th>
-<th><b>./loc1414_h</b></th><th><b>./s1414_h</b></th><th><b>./c1414_h</b></th><th><b>./t1414_h</b></th><th><b>./cs1414_h</b></th><th><b>./ts1414_h</b></th><th><b>./ct1414_h</b></th><th><b>./cts1414_h</b></th>
-  </tr>    <th>sp14->fa15</th>
-    <th><b>./loc1415_h</b></th><th><b>./s1415_h</b></th><th><b>./c1415_h</b></th><th><b>./t1415_h</b></th><th><b>./cs1415_h</b></th><th><b>./ts1415_h</b></th><th><b>./ct1415_h</b></th><th><b>./cts1415_h</b></th>
-  </tr>
-    <th>fa15->sp14</th>
-    <th><b>./loc1514_h</b></th><th><b>./s1514_h</b></th><th><b>./c1514_h</b></th><th><b>./t1514_h</b></th><th><b>./cs1514_h</b></th><th><b>./ts1514_h</b></th><th><b>./ct1514_h</b></th><th><b>./cts1514_h</b></th>
-  </tr>
-    <th>fa15->fa15</th>
-    <th><b>./loc1515_h</b></th><th><b>./s1515_h</b></th><th><b>./c1515_h</b></th><th><b>./t1515_h</b></th><th><b>./cs1515_h</b></th><th><b>./ts1515_h</b></th><th><b>./ct1515_h</b></th><th><b>./cts1515_h</b></th>
-  </tr>
+  <tr><th>sp14->sp14</th><th><b>./loc1414_h</b></th><th><b>./s1414_h</b></th><th><b>./c1414_h</b></th><th><b>./t1414_h</b></th><th><b>./cs1414_h</b></th><th><b>./ts1414_h</b></th><th><b>./ct1414_h</b></th><th><b>./cts1414_h</b></th></tr>
+  <tr><th>sp14->fa15</th><th><b>./loc1415_h</b></th><th><b>./s1415_h</b></th><th><b>./c1415_h</b></th><th><b>./t1415_h</b></th><th><b>./cs1415_h</b></th><th><b>./ts1415_h</b></th><th><b>./ct1415_h</b></th><th><b>./cts1415_h</b></th></tr>
+  <tr><th>fa15->sp14</th><th><b>./loc1514_h</b></th><th><b>./s1514_h</b></th><th><b>./c1514_h</b></th><th><b>./t1514_h</b></th><th><b>./cs1514_h</b></th><th><b>./ts1514_h</b></th><th><b>./ct1514_h</b></th><th><b>./cts1514_h</b></th></tr>
+  <tr><th>fa15->fa15</th><th><b>./loc1515_h</b></th><th><b>./s1515_h</b></th><th><b>./c1515_h</b></th><th><b>./t1515_h</b></th><th><b>./cs1515_h</b></th><th><b>./ts1515_h</b></th><th><b>./ct1515_h</b></th><th><b>./cts1515_h</b></th></tr>
 </table>
 <p>Each command takes about 20 to 30 minutes to output the <em>final accuracy</em>, which is proportional to the number of features that you want the models to focus on.</p>
 <p>The accuracy you get from these command should look similar to the this graph shown in our paper:</p>
