@@ -1,11 +1,21 @@
 <h1 id="header"> APLAS2022 </h1>
 
 <h1 id="intro"> Introduction </h1>
+<h2> Paper Abstract </h2>
 <p>
 Strong type system helps programmers to eliminate many errors without much burden of supplying type annotations. However, this flexibility makes it highly non-trivial to diagnose the failure mode, especially for novice programmers.  Compared to classic constraint solving and optimization based approaches, the data-driven approach has shown great promise of identifying the root cause of type errors with high accuracy. Instead of relying on hand-engineered features, this work explores natural language models for type error localization, which can be trained in an end-to-end fashion without requiring any features. We demonstrate that, for novice type error diagnosis, language model based approach significantly outperforms the previous state-of-the-art data-driven approach. Specifically, our transformer model could predict type errors correctly 62% of the time, outperforming the <a href="https://arxiv.org/pdf/1708.07583.pdf">state-of-the-art NATE</a>'s data-driven model by 11%, in a more rigorous metric of accuracy measurement. Furthermore, we also apply structural probe to explain the performance difference of different language models. 
 </p>
 
-<h2 id="gd"> Environment Installation & Setting up </h2>
+<h2> Experiments </h2>
+<p>Recall the two main experiments we've done in this work.</p>
+<ul>
+  <li>Training NLP Language Model,<em> BERT</em>, through different methodologies for type error diagnosis.</li>
+  <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
+</ul>
+
+<h1> Reproducing the Evaluation</h3>
+<h2 id="nate"> NATE's experiments under the new metric</h2>
+<h3>Environment Installation & Setting up </h3>
 <p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to activate the python virtualenv using the following commands:</b>
 </p>
 
@@ -15,14 +25,14 @@ source .venv/bin/activate
 ```
 <p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
 <ol>
-  <li>Impact of contextual features on blame/diagnosis accuracy</li>
+  <li><a href="#features">Impact of contextual features on blame/diagnosis accuracy</a></li>
   <li>Blame/Diagnosis accuracy of different techniques</li>
 </ol>
 <p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ---------------------------------
-<h3>   1. Feature Matters </h3>
+<h3 id="features">   1. Feature Matters </h3>
 <br>
 <b>LOGISTIC</b>:
 <table align="center">
@@ -62,8 +72,9 @@ source .venv/bin/activate
 <tr><th>fa15->fa15</th><th><b>./loc1515_h.sh</b></th><th><b>./s1515_h.sh</b></th><th><b>./c1515_h.sh</b></th><th><b>./t1515_h.sh</b></th><th><b>./cs1515_h.sh</b></th><th><b>./ts1515_h.sh</b></th><th><b>./ct1515_h.sh</b></th><th><b>./cts1515_h.sh</b></th></tr>
 </table>
 <p>Each command takes about 20 to 30 minutes to output the <em>final accuracy</em>, which is <em>proportional to</em> the number of features that you want the models to focus on.</p>
-<p>The accuracy you get from these command should look similar to this graph demonstrated below, which reflects the performance of models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
+<p>Using the second rows of both tables, you can get something that looks similar to this graph demonstrated below, which reflects the performance of models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
+You can of course, try other dataset combinations using other rows of the tables.
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ------------------------------------------
