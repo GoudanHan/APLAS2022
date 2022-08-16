@@ -54,7 +54,7 @@ source .venv/bin/activate
 </table>
 
 <b>MLP-500 model:</b>
-<table align="center" padding = "100px">
+<table align="center">
   <tr>
     <th></th>
     <th>Local Syn</th>
@@ -71,8 +71,26 @@ source .venv/bin/activate
 <tr><th>fa15->sp14</th><th><b>./loc1514_h.sh</b></th><th><b>./s1514_h.sh</b></th><th><b>./c1514_h.sh</b></th><th><b>./t1514_h.sh</b></th><th><b>./cs1514_h.sh</b></th><th><b>./ts1514_h.sh</b></th><th><b>./ct1514_h.sh</b></th><th><b>./cts1514_h.sh</b></th></tr>
 <tr><th>fa15->fa15</th><th><b>./loc1515_h.sh</b></th><th><b>./s1515_h.sh</b></th><th><b>./c1515_h.sh</b></th><th><b>./t1515_h.sh</b></th><th><b>./cs1515_h.sh</b></th><th><b>./ts1515_h.sh</b></th><th><b>./ct1515_h.sh</b></th><th><b>./cts1515_h.sh</b></th></tr>
 </table>
+<b>MLP-10 model:</b>
+<table align="center">
+  <tr>
+    <th></th>
+    <th>Local Syn</th>
+    <th>+S(ize)</th>
+    <th>+C(ontext)</th>
+    <th>+T(ype)</th>
+    <th>+C+S</th>
+    <th>+T+S</th>
+    <th>+C+T</th>
+    <th>+C+T+S</th>
+  </tr>
+  <tr><th>sp14->sp14</th><th><b>./loc1414_h10.sh</b></th><th><b>./s1414_h10.sh</b></th><th><b>./c1414_h10.sh</b></th><th><b>./t1414_h10.sh</b></th><th><b>./cs1414_h10.sh</b></th><th><b>./ts1414_h10.sh</b></th><th><b>./ct1414_h10.sh</b></th><th><b>./cts1414_h10.sh</b></th></tr>
+<tr><th>sp14->fa15</th><th><b>./loc1415_h10.sh</b></th><th><b>./s1415_h10.sh</b></th><th><b>./c1415_h10.sh</b></th><th><b>./t1415_h10.sh</b></th><th><b>./cs1415_h10.sh</b></th><th><b>./ts1415_h10.sh</b></th><th><b>./ct1415_h10.sh</b></th><th><b>./cts1415_h10.sh</b></th></tr>
+<tr><th>fa15->sp14</th><th><b>./loc1514_h10.sh</b></th><th><b>./s1514_h10.sh</b></th><th><b>./c1514_h10.sh</b></th><th><b>./t1514_h10.sh</b></th><th><b>./cs1514_h10.sh</b></th><th><b>./ts1514_h10.sh</b></th><th><b>./ct1514_h10.sh</b></th><th><b>./cts1514_h10.sh</b></th></tr>
+<tr><th>fa15->fa15</th><th><b>./loc1515_h10.sh</b></th><th><b>./s1515_h10.sh</b></th><th><b>./c1515_h10.sh</b></th><th><b>./t1515_h10.sh</b></th><th><b>./cs1515_h10.sh</b></th><th><b>./ts1515_h10.sh</b></th><th><b>./ct1515_h10.sh</b></th><th><b>./cts1515_h10.sh</b></th></tr>
+</table>
 <p>Each command takes about 20 to 30 minutes to output the <em>final accuracy</em>, which is <em>proportional to</em> the number of features that you want the models to focus on.</p>
-<p>Using the second rows of both tables, you can get something that looks similar to this graph demonstrated below, which reflects the performance of models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
+<p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
 You can of course, try other dataset combinations using other rows of the tables.
 <p align="right"><a href="#header">↑Intro</a></p>
