@@ -14,11 +14,34 @@ cd ~/Desktop/nate/
 source .venv/bin/activate
 ```
 <p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
-<ul>
+<ol>
   <li>Impact of contextual features on blame/diagnosis accuracy</li>
   <li>Blame/Diagnosis accuracy of different techniques</li>
-</ul>
-<p>The commands of  running these experiments are given in the following sections. <b>Notice: It is possible that the accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
+</ol>
+<p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that the accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
+<p align="right"><a href="#intro">↑Top</a></p>
 
-
+---------------------------------
+<h3>   1. Feature Matters </h3>
+<table align="center" cellpadding="15" width="100%">
+  <tr>
+    <th></th>
+    <th>Local Syn</th>
+    <th>+S(ize)</th>
+    <th>+C(ontext)</th>
+    <th>+T(ype)</th>
+    <th>+C+S</th>
+    <th>+T+S</th>
+    <th>+C+T</th>
+    <th>+C+T+S</th>
+  </tr>
+  <tr>
+    <th>sp14->sp14</th>
+  </tr>
+    <th>sp14->fa15</th>
+  </tr>
+    <th>fa15->sp14</th>
+  </tr>
+    <th>fa15->fa15</th>
+  </tr>
 
