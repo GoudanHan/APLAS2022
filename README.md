@@ -93,5 +93,8 @@ Please properly type the technique you wish to use
 The accuracy is on its way...
 The final accuracy is 38.79%
 </pre>
-Following these instructions, you can get the accuracy of any model/technique used by NATE 
+
+<h3>Conclusion</h3>
+Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly, the results you will get is going to look almost identical to us.
 </p>
+<p align="right"><a href="#header">↑Intro</a></p>
