@@ -37,8 +37,12 @@ source .venv/bin/activate
   </tr>
   <tr>
     <th>sp14->sp14</th>
+    <th><pre>./print</pre></th>
   </tr>
     <th>sp14->fa15</th>
+    <th><pre>./loc1415</pre></th>
+    <th><pre>./s1415</pre></th>
+    <th><pre>./c1415</pre></th>
   </tr>
     <th>fa15->sp14</th>
   </tr>
