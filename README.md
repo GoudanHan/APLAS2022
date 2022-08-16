@@ -108,7 +108,7 @@ source .venv/bin/activate
 </table>
 <p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
-You can of course, try other dataset combinations using other rows of the tables.
+You can of course, try other dataset combinations using other commands in the tables.
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ------------------------------------------
