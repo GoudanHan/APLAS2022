@@ -50,6 +50,7 @@ source .venv/bin/activate
 ---------------------------------
 <h3 id="features">   1. Feature Matters </h3>
 <br>
+<p>We provide command tables for the three models used by NATE for you. Each command takes about <em>20 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the models to focus on.</p>
 <b>LOGISTIC</b>:
 <table align="center">
   <tr>
@@ -105,7 +106,6 @@ source .venv/bin/activate
 <tr><th>fa15->sp14</th><th><b>./loc1514_h10.sh</b></th><th><b>./s1514_h10.sh</b></th><th><b>./c1514_h10.sh</b></th><th><b>./t1514_h10.sh</b></th><th><b>./cs1514_h10.sh</b></th><th><b>./ts1514_h10.sh</b></th><th><b>./ct1514_h10.sh</b></th><th><b>./cts1514_h10.sh</b></th></tr>
 <tr><th>fa15->fa15</th><th><b>./loc1515_h10.sh</b></th><th><b>./s1515_h10.sh</b></th><th><b>./c1515_h10.sh</b></th><th><b>./t1515_h10.sh</b></th><th><b>./cs1515_h10.sh</b></th><th><b>./ts1515_h10.sh</b></th><th><b>./ct1515_h10.sh</b></th><th><b>./cts1515_h10.sh</b></th></tr>
 </table>
-<p>Each command takes about <em>20 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the models to focus on.</p>
 <p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
 You can of course, try other dataset combinations using other rows of the tables.
