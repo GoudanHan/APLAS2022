@@ -9,13 +9,11 @@ Strong type system helps programmers to eliminate many errors without much burde
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
-  <li><a href="#training">Training NLP Language Model,<em> BERT</em>, through different methodologies for type error diagnosis.</a></li>
+  <li>Training NLP Language Model,<em> BERT</em>, through different methodologies for type error diagnosis.</li>
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
 
 <h1> Reproducing the Evaluation</h3>
-<h2 id='training'>Training NLP Language Model, BERT, through different methodologies for type error diagnosis.</h2>
-
 <h2 id="nate"> NATE's experiments under the new metric</h2>
 <h3>Environment Installation & Setting up </h3>
 <p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to activate the python virtualenv using the following commands:</b>
@@ -80,4 +78,20 @@ You can of course, try other dataset combinations using other rows of the tables
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ------------------------------------------
-<h3> 2.
+<h3> 2. Technique matters </h3>
+<p>We provide you a python script that you can use to get the diagnosis accuracy of different techniques, which includes <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
+<br>
+Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do put single or double quotation marks besides you answers as shown in the following example to make sure they can be read by the script:
+<pre>
+Please properly type the dataset you want to test. ('sp14' or 'fa15'): 'sp14'
+Please properly type the technique you wish to use
+        'decision-tree'
+        'random-forest'
+        'sherrloc'
+        'ocaml'
+: "random-forest"
+The accuracy is on its way...
+The final accuracy is 38.79%
+</pre>
+Following these instructions, you can get the accuracy of any model/technique used by NATE 
+</p>
