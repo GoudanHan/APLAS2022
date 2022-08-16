@@ -16,7 +16,7 @@ Strong type system helps programmers to eliminate many errors without much burde
 <h1> Reproducing the Evaluation</h3>
 <h2 id="nate"> NATE's experiments under the new metric</h2>
 <h3>Environment Installation & Setting up </h3>
-<p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to activate the python virtualenv using the following commands:</b>
+<p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to open the terminal and activate the python virtualenv using the following commands:</b>
 </p>
 
 ```
@@ -26,7 +26,7 @@ source .venv/bin/activate
 <p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
 <ol>
   <li><a href="#features">Impact of contextual features on blame/diagnosis accuracy</a></li>
-  <li>Blame/Diagnosis accuracy of different techniques</li>
+  <li><a href="#techniques">Blame/Diagnosis accuracy of different techniques</a></li>
 </ol>
 <p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
 <p align="right"><a href="#header">↑Intro</a></p>
@@ -96,7 +96,7 @@ You can of course, try other dataset combinations using other rows of the tables
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ------------------------------------------
-<h3> 2. Technique matters </h3>
+<h3 id="techniques"> 2. Technique matters </h3>
 <p>We provide you a python script that you can use to get the diagnosis accuracy of different techniques, which includes <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
 <br>
 Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do put single or double quotation marks besides you answers as shown in the following example to make sure they can be read by the script:
