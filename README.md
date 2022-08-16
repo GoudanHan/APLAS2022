@@ -6,15 +6,19 @@ Strong type system helps programmers to eliminate many errors without much burde
 </p>
 
 <h2 id="gd"> Environment Installation & Getting Started </h2>
-<p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE's virtual machine</a>, for people who want to reproduce the diagnosis accuracies of NATE's models under the new metric. The user and password are both "nate". The VM should already have everything you need installed. You just need to activate the python virtualenv with the following commands:</b>
+<p> We provide an easy-to-use <a href="">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE's virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to activate the python virtualenv using the following commands:</b>
 </p>
 
 ```
 cd ~/Desktop/nate/
 source .venv/bin/activate
 ```
-<p align="center"><img src="https://user-images.githubusercontent.com/90864900/184725729-f836ee33-9cd0-4124-ad52-83c5c986d088.png">
-</p>
+<p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
+<ul>
+  <li>Impact of contextual features on blame/diagnosis accuracy</li>
+  <li>Blame/Diagnosis accuracy of different techniques</li>
+</ul>
+<p>The commands of  running these experiments are given in the following sections. <b>Notice: It is possible that the accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
 
 
 
