@@ -19,7 +19,7 @@ source .venv/bin/activate
   <li>Blame/Diagnosis accuracy of different techniques</li>
 </ol>
 <p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that the accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
-<p align="right"><a href="#header">↑Top</a></p>
+<p align="right"><a href="#header">↑Intro</a></p>
 
 ---------------------------------
 <h3>   1. Feature Matters </h3>
@@ -51,4 +51,4 @@ source .venv/bin/activate
 <p>Each command takes about 20 to 30 minutes to output the <em>final accuracy</em>, which is proportional to the number of features that you want the models to focus on.</p>
 <p>The accuracy you get from these command should look similar to the this graph shown in our paper:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
-<p align="right"><a href="#header">↑Top</a></p>
+<p align="right"><a href="#header">↑Intro</a></p>
