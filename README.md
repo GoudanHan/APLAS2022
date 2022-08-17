@@ -115,7 +115,7 @@ You can of course, try other dataset combinations using other commands in the ta
 <h3 id="techniques"> 2. Technique matters </h3>
 <p>We provide you a python script that you can use to get the diagnosis accuracy of different techniques, which includes <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
 <br>
-Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do put single or double quotation marks besides you answers as shown in the following example to make sure they can be read by the script:
+Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do <b>put</b> <em>single or double quotation marks</em> besides you answers as shown in the following example to make sure they can be read by the script:
 <pre>
 Please properly type the dataset you want to test. ('sp14' or 'fa15'): 'sp14'
 Please properly type the technique you wish to use
@@ -129,6 +129,6 @@ The final accuracy is 38.79%
 </pre>
 
 <h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly, the results you will get is going to look almost identical to us.
+Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look almost identical to us.
 </p>
 <p align="right"><a href="#header">↑Intro</a></p>
