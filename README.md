@@ -13,7 +13,7 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
 
-<h1> Reproducing the Evaluation</h3>
+<h1> Reproducing the Evaluation</h1>
 <h2 id="training">Training NLP Language Model, BERT, through different methodologies for type error diagnosis.</h2>
 <h3>Environment Introduction & Setting up </h3>
 For this experiment, we used Kaggle notebook and its GPU accelerator to train the following models: 
@@ -28,6 +28,12 @@ For this experiment, we used Kaggle notebook and its GPU accelerator to train th
   <li>BERT pre-trained on OCaml</li>
 </ul>
 You can find the notebooks here: 【LINKS】
+
+USAGE
+Once you opened the notebook, on the right side, you can change the accelerator to GPU. Then you are all set to run the notebook! Just click on the Run All in the top menu bar and then the notebook will prompt you to enter a model's name. For now, the notebook supports training bert-small, bert-base, bert-large, codebert, and OCaml bert.
+
+OUTPUT
+After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working).
 
 
 <h2 id="nate"> NATE's experiments under the new metric</h2>
