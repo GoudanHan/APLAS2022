@@ -39,7 +39,7 @@ After the notebook finishes running, you can see the trained model files on the 
 <h2 id="nate"> NATE's experiments under the new metric</h2>
 <h3>Environment Installation & Setting up </h3>
 <p> We provide an easy-to-use <a href="https://www.dropbox.com/s/nasq90j0p7jukbf/nate.ova?dl=0">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>".</p>
-<p>The VM should already have everything installed; however, it is possible that the graphical user interface of the VM fails to launch. We encountered the same issue while working on NATE's VM. The good news is you just need to the terminal to reproduce the experiments. Press
+<p>The VM should already have everything installed; however, it is possible that the graphical user interface of the VM fails to launch. We encountered the same issue while working on NATE's VM. The good news is you just need the terminal to run the experiments. Press
 <b><em>Alt</em> and <em>F3</em></b> together if no display or black screen, then you should see the terminal open.
 To activate the python virtualenv, type in the following commands:</b>
 </p>
@@ -59,7 +59,7 @@ source .venv/bin/activate
 ---------------------------------
 <h3 id="features">   1. Feature Matters </h3>
 <br>
-<p>We provide command tables for the three models used by NATE for you. Each command takes about <em>20 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the models to focus on.</p>
+<p>We provide command tables for the three models used by NATE for you. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <b>LOGISTIC</b>:
 <table align="center">
   <tr>
@@ -115,7 +115,7 @@ source .venv/bin/activate
 <tr><th>fa15->sp14</th><th><b>./loc1514_h10.sh</b></th><th><b>./s1514_h10.sh</b></th><th><b>./c1514_h10.sh</b></th><th><b>./t1514_h10.sh</b></th><th><b>./cs1514_h10.sh</b></th><th><b>./ts1514_h10.sh</b></th><th><b>./ct1514_h10.sh</b></th><th><b>./cts1514_h10.sh</b></th></tr>
 <tr><th>fa15->fa15</th><th><b>./loc1515_h10.sh</b></th><th><b>./s1515_h10.sh</b></th><th><b>./c1515_h10.sh</b></th><th><b>./t1515_h10.sh</b></th><th><b>./cs1515_h10.sh</b></th><th><b>./ts1515_h10.sh</b></th><th><b>./ct1515_h10.sh</b></th><th><b>./cts1515_h10.sh</b></th></tr>
 </table>
-<p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the models <em>trained on sp14</em> and <em>tested on fa15</em>:</p>
+<p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the two models <em>trained on dataset sp14</em> and <em>tested on dataset fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
 You can of course, try other dataset combinations using other commands in the tables.
 <p align="right"><a href="#header">↑Intro</a></p>
