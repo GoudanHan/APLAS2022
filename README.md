@@ -33,7 +33,7 @@ You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2
 Once you opened the notebook, on the right side, you can change the accelerator to GPU. Then you are all set to run the notebook! Just click on the Run All in the top menu bar and then the notebook will prompt you to enter a model's name. For now, the notebook supports training bert-small, bert-base, bert-large, codebert, and OCaml bert.
 
 <h3>Output</h3>
-After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models here: https://huggingface.co/GoudanHan/bertmedium15to14/tree/main
+After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models here: https://huggingface.co/GoudanHan
 
 
 <h2 id="nate"> NATE's experiments under the new metric</h2>
