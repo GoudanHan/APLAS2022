@@ -38,7 +38,10 @@ After the notebook finishes running, you can see the trained model files on the 
 
 <h2 id="nate"> NATE's experiments under the new metric</h2>
 <h3>Environment Installation & Setting up </h3>
-<p> We provide an easy-to-use <a href="https://www.dropbox.com/s/nasq90j0p7jukbf/nate.ova?dl=0">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>". The VM should already have everything installed. You just need to open the terminal and activate the python virtualenv using the following commands:</b>
+<p> We provide an easy-to-use <a href="https://www.dropbox.com/s/nasq90j0p7jukbf/nate.ova?dl=0">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>".</p>
+<p>The VM should already have everything installed; however, it is possible that the graphical user interface of the VM fails to launch. We encountered the same issue while working on NATE's VM. The good news is you just need to the terminal to reproduce the experiments. Press
+<b><em>Alt</em> and <em>F3</em></b> together if no display or black screen, then you should see the terminal open.
+To activate the python virtualenv, type in the following commands:</b>
 </p>
 
 ```
