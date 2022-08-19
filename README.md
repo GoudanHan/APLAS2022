@@ -22,13 +22,14 @@ Strong type system helps programmers to eliminate many errors without much burde
   </li>
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
 </ul>
+<p>Since the datasets and Kaggle notebooks are stored online, and the virtual machine is public to anyone on Dropbox. The our artifact submitted on Zenodo will just be the scripts for generating the graphs, which contain size less than 1M.</p>
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
   <li><a href="#training">Natural Language models' accuracies.</a></li>
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
-<p>Since the datasets and Kaggle notebooks are stored online. The our artifact submitted on Zenodo will just be the virtual machine and scripts for generating the graphs, which contain size 5.2GB.</p>
+
 <h2 id="training">Natrual language models' accruacies </h2>
 <h3>Environment Introduction & Setting up </h3>
 For this line of experiments, we used Kaggle notebook and its GPU accelerator to train the following models.
