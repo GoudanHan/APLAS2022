@@ -28,21 +28,21 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#training">Training NLP Language Model,<em> BERT</em>, through different methodologies for type error diagnosis.</a></li>
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
-
+<p>Since the datasets and Kaggle notebooks are stored online. The our artifact submitted on Zenodo will just be the virtual machine and scripts for generating the graphs, which contain size 4.71GB.</p>
 <h2 id="training">Natrual language models' accruacies </h2>
 <h3>Environment Introduction & Setting up </h3>
 For this line of experiments, we used Kaggle notebook and its GPU accelerator to train the following models.
   
   
 <h3 id ="models" > Calculate models' accruacies directly </h3>  
-Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> Inference</a> 
+Run <a href="https://www.kaggle.com/code/allengeng123/inference-7fa4ae/edit"> Inference</a> 
 The notebook requires two input: model and tasks. And it currently support the following models:
 
 <table align="center">
   <tr>
     <th></th>
+    <th>SP14->FA15</th>
     <th>FA15->SP14</th>
-    <th>FA15->FA15</th>
  </tr>
  <tr>
     <th>BERT Small</th>
