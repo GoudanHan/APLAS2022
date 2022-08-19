@@ -1,11 +1,27 @@
 <h1 id="header"> APLAS2022 </h1>
 
-<h1 id="intro"> Introduction </h1>
-<h2> Paper Abstract </h2>
+<h1 id="intro"> Artifacts </h1>
+<!-- <h2> Paper Abstract </h2>
 <p>
 Strong type system helps programmers to eliminate many errors without much burden of supplying type annotations. However, this flexibility makes it highly non-trivial to diagnose the failure mode, especially for novice programmers.  Compared to classic constraint solving and optimization based approaches, the data-driven approach has shown great promise of identifying the root cause of type errors with high accuracy. Instead of relying on hand-engineered features, this work explores natural language models for type error localization, which can be trained in an end-to-end fashion without requiring any features. We demonstrate that, for novice type error diagnosis, language model based approach significantly outperforms the previous state-of-the-art data-driven approach. Specifically, our transformer model could predict type errors correctly 62% of the time, outperforming the <a href="https://arxiv.org/pdf/1708.07583.pdf">state-of-the-art NATE</a>'s data-driven model by 11%, in a more rigorous metric of accuracy measurement. Furthermore, we also apply structural probe to explain the performance difference of different language models. 
-</p>
-
+</p> -->
+<ul>
+  <li>Kaggle Notebooks 
+    <ol>
+      <li>Our machine learning models</li>
+      <li>NATE's dataset, SP14 and FA15</li>
+      <li><em>Dataset</em>: 20k OCaml programs written by beginners</li>
+      <li><em>Dataset</em>: 350k OCaml programs from GitHub</li>
+    </ol>
+  </li>
+  <li>Our Virtual Machine
+    <ol>
+      <li>NATE's models under the new metric</li>
+      <li>Scripts and commands to get models' blame/diagnosis accuracy</li>
+    </ol>
+  </li>
+  <li>Scripts for Generating Graphs</li>
+</ul>
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
