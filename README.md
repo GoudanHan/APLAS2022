@@ -139,8 +139,9 @@ The accuracy is on its way...
 The final accuracy is 38.79%
 </pre>
 
+
 <h2 id="graph">Graphs && Conclusion</h2>
-<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission via Zenodo Link, which the names of them corresponds to the figures 5 to 7 in our paper. 
+<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission via <a href="https://zenodo.org/record/7008941#.Yv8aXxzMJPY">Zenodo Link</a>, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
   <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
