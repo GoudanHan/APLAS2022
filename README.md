@@ -48,10 +48,10 @@ The notebook currently support the following models:
  </tr>
  <tr>
     <th>BERT Small</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>model = "bert-small-14to15"; task</th>
+    <th>model = "bert-small-15to14"; task = </th>
+    <th>model = "bert-small-14to15"; </th>
+    <th>model = "bert-small-15to14"; </th>
  </tr>
  <tr>
     <th>BERT Medium</th>
