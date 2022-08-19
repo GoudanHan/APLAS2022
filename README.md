@@ -138,7 +138,7 @@ The final accuracy is 38.79%
 </pre>
 
 <h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. You can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures' names in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look almost identical to us.
+Following these instructions, you can get the accuracy of any model/technique used by NATE under <p>the new metric</p>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. You can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
 <li>Accuracy of Type Error Localization Techniques.py</li>
