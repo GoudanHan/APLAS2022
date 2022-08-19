@@ -33,14 +33,11 @@ Strong type system helps programmers to eliminate many errors without much burde
 <h3>Environment Introduction & Setting up </h3>
 For this experiment, we used Kaggle notebook and its GPU accelerator to train the following models: 
 <ul>
-  <li>Bidirectrional LSTM</li>
-  <li>BERT from scrartch</li>
   <li>BERT-small</li>
   <li>BERT-medium</li>
   <li>BERT-base</li>
-  <li>BERT-large</li>
   <li>CodeBERT</li>
-  <li>BERT pre-trained on OCaml</li>
+  <li>BERT-large pre-trained on OCaml</li>
 </ul>
 You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2/typeinference/edit">The notebook to train BERT-small, BERT-base, BERT-large, and CodeBERT</a>, <a href="https://www.kaggle.com/code/tianyuhan2/typeerrorinference0611/edit">The notebook to train OCamlBERT-large</a>, and <a href="https://www.kaggle.com/allengeng123/inference/edit">The notebook to directly calculate accruacy of models</a>.
 
