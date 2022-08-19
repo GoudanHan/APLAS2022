@@ -129,7 +129,7 @@ Some messages will display on the terminal asking you to <em>properly</em> type 
 Please properly type the dataset you want to test. ('sp14' or 'fa15'): 'sp14'
 Please properly type the technique you wish to use
         'decision-tree'
-        'random-forest'
+        'random-forest' 
         'sherrloc'
         'ocaml'
 : "random-forest"
