@@ -29,7 +29,6 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
 
-<h1> Reproducing the Evaluation</h1>
 <h2 id="training">Training NLP Language Model, BERT, through different methodologies for type error diagnosis.</h2>
 <h3>Environment Introduction & Setting up </h3>
 For this experiment, we used Kaggle notebook and its GPU accelerator to train the following models: 
