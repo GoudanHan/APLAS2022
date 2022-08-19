@@ -36,7 +36,7 @@ For this line of experiments, we used Kaggle notebook and its GPU accelerator to
   
 <h3> Calculate models' accruacies directly </h3>  
 Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> Inference</a>
-The notebook currently support the following models:
+The notebook requires two input: model and tasks. And it currently support the following models:
 
 <table align="center">
   <tr>
@@ -48,38 +48,38 @@ The notebook currently support the following models:
  </tr>
  <tr>
     <th>BERT Small</th>
-    <th>model = "bert-small-14to15"; task</th>
-    <th>model = "bert-small-15to14"; task = </th>
-    <th>model = "bert-small-14to15"; </th>
-    <th>model = "bert-small-15to14"; </th>
+    <th>model = "bert-small-14"; task=</th>
+    <th>model = "bert-small-15"; task=</th>
+    <th>model = "bert-small-14"; task=</th>
+    <th>model = "bert-small-15"; task=</th>
  </tr>
  <tr>
     <th>BERT Medium</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>model = "bert-medium-14"; task=</th>
+    <th>model = "bert-medium-15"; task=</th>
+    <th>model = "bert-medium-14"; task=</th>
+    <th>model = "bert-medium-15"; task=</th>
  </tr>
  <tr>
     <th>BERT Base</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>model = "bert-base-14"; task=</th>
+    <th>model = "bert-base-15"; task=</th>
+    <th>model = "bert-base-14"; task=</th>
+    <th>model = "bert-base-15"; task=</th>
  </tr>
  <tr>
     <th>CodeBert</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>model = "codebert-14"; task=</th>
+    <th>model = "codebert-15"; task=</th>
+    <th>model = "codebert-14"; task=</th>
+    <th>model = "codebert-15"; task=</th>
  </tr>
  <tr>
     <th>OCamlBert Large</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>model = "ocamlbert-large-14"; task=</th>
+    <th>model = "ocamlbert-large-15"; task=</th>
+    <th>model = "ocamlbert-large-14"; task=</th>
+    <th>model = "ocamlbert-large-15"; task=</th>
  </tr>
 </table>
 
