@@ -50,7 +50,7 @@ source .venv/bin/activate
 ```
 <p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
 <ol>
-  <li><a href="#features">Impact of contextual features on blame/diagnosis accuracy</a></li>
+  <li><a href="#features">Blame/diagnosis accuracy of NATE's models</a></li>
   <li><a href="#techniques">Blame/Diagnosis accuracy of different techniques</a></li>
 </ol>
 <p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
@@ -59,61 +59,36 @@ source .venv/bin/activate
 ---------------------------------
 <h3 id="features">   1. Impact of features on Diagnosis Accuracy </h3>
 <br>
-<p>We provide command tables for the three models used by NATE for you. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
-<b>LOGISTIC</b>:
+<p>We provide commands for the three ML models used by NATE for you. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
   <tr>
     <th></th>
-    <th>Local Syn</th>
-    <th>+S(ize)</th>
-    <th>+C(ontext)</th>
-    <th>+T(ype)</th>
-    <th>+C+S</th>
-    <th>+T+S</th>
-    <th>+C+T</th>
-    <th>+C+T+S</th>
-  </tr>
-<tr><th>sp14->sp14</th><th><b>./loc1414_l.sh</b></th><th><b>./s1414_l.sh</b></th><th><b>./c1414_l.sh</b></th><th><b>./t1414_l.sh</b></th><th><b>./cs1414_l.sh</b></th><th><b>./ts1414_l.sh</b></th><th><b>./ct1414_l.sh</b></th><th><b>./cts1414_l.sh</b></th></tr>
-<tr><th>sp14->fa15</th><th><b>./loc1415_l.sh</b></th><th><b>./s1415_l.sh</b></th><th><b>./c1415_l.sh</b></th><th><b>./t1415_l.sh</b></th><th><b>./cs1415_l.sh</b></th><th><b>./ts1415_l.sh</b></th><th><b>./ct1415_l.sh</b></th><th><b>./cts1415_l.sh</b></th></tr>
-<tr><th>fa15->sp14</th><th><b>./loc1514_l.sh</b></th><th><b>./s1514_l.sh</b></th><th><b>./c1514_l.sh</b></th><th><b>./t1514_l.sh</b></th><th><b>./cs1514_l.sh</b></th><th><b>./ts1514_l.sh</b></th><th><b>./ct1514_l.sh</b></th><th><b>./cts1514_l.sh</b></th></tr>
-<tr><th>fa15->fa15</th><th><b>./loc1515_l.sh</b></th><th><b>./s1515_l.sh</b></th><th><b>./c1515_l.sh</b></th><th><b>./t1515_l.sh</b></th><th><b>./cs1515_l.sh</b></th><th><b>./ts1515_l.sh</b></th><th><b>./ct1515_l.sh</b></th><th><b>./cts1515_l.sh</b></th></tr>
-</table>
-
-<b>MLP-500 model:</b>
-<table align="center">
-  <tr>
-    <th></th>
-    <th>Local Syn</th>
-    <th>+S(ize)</th>
-    <th>+C(ontext)</th>
-    <th>+T(ype)</th>
-    <th>+C+S</th>
-    <th>+T+S</th>
-    <th>+C+T</th>
-    <th>+C+T+S</th>
-  </tr>
-<tr><th>sp14->sp14</th><th><b>./loc1414_h.sh</b></th><th><b>./s1414_h.sh</b></th><th><b>./c1414_h.sh</b></th><th><b>./t1414_h.sh</b></th><th><b>./cs1414_h.sh</b></th><th><b>./ts1414_h.sh</b></th><th><b>./ct1414_h.sh</b></th><th><b>./cts1414_h.sh</b></th></tr>
-<tr><th>sp14->fa15</th><th><b>./loc1415_h.sh</b></th><th><b>./s1415_h.sh</b></th><th><b>./c1415_h.sh</b></th><th><b>./t1415_h.sh</b></th><th><b>./cs1415_h.sh</b></th><th><b>./ts1415_h.sh</b></th><th><b>./ct1415_h.sh</b></th><th><b>./cts1415_h.sh</b></th></tr>
-<tr><th>fa15->sp14</th><th><b>./loc1514_h.sh</b></th><th><b>./s1514_h.sh</b></th><th><b>./c1514_h.sh</b></th><th><b>./t1514_h.sh</b></th><th><b>./cs1514_h.sh</b></th><th><b>./ts1514_h.sh</b></th><th><b>./ct1514_h.sh</b></th><th><b>./cts1514_h.sh</b></th></tr>
-<tr><th>fa15->fa15</th><th><b>./loc1515_h.sh</b></th><th><b>./s1515_h.sh</b></th><th><b>./c1515_h.sh</b></th><th><b>./t1515_h.sh</b></th><th><b>./cs1515_h.sh</b></th><th><b>./ts1515_h.sh</b></th><th><b>./ct1515_h.sh</b></th><th><b>./cts1515_h.sh</b></th></tr>
-</table>
-<b>MLP-10 model:</b>
-<table align="center">
-  <tr>
-    <th></th>
-    <th>Local Syn</th>
-    <th>+S(ize)</th>
-    <th>+C(ontext)</th>
-    <th>+T(ype)</th>
-    <th>+C+S</th>
-    <th>+T+S</th>
-    <th>+C+T</th>
-    <th>+C+T+S</th>
-  </tr>
-  <tr><th>sp14->sp14</th><th><b>./loc1414_h10.sh</b></th><th><b>./s1414_h10.sh</b></th><th><b>./c1414_h10.sh</b></th><th><b>./t1414_h10.sh</b></th><th><b>./cs1414_h10.sh</b></th><th><b>./ts1414_h10.sh</b></th><th><b>./ct1414_h10.sh</b></th><th><b>./cts1414_h10.sh</b></th></tr>
-<tr><th>sp14->fa15</th><th><b>./loc1415_h10.sh</b></th><th><b>./s1415_h10.sh</b></th><th><b>./c1415_h10.sh</b></th><th><b>./t1415_h10.sh</b></th><th><b>./cs1415_h10.sh</b></th><th><b>./ts1415_h10.sh</b></th><th><b>./ct1415_h10.sh</b></th><th><b>./cts1415_h10.sh</b></th></tr>
-<tr><th>fa15->sp14</th><th><b>./loc1514_h10.sh</b></th><th><b>./s1514_h10.sh</b></th><th><b>./c1514_h10.sh</b></th><th><b>./t1514_h10.sh</b></th><th><b>./cs1514_h10.sh</b></th><th><b>./ts1514_h10.sh</b></th><th><b>./ct1514_h10.sh</b></th><th><b>./cts1514_h10.sh</b></th></tr>
-<tr><th>fa15->fa15</th><th><b>./loc1515_h10.sh</b></th><th><b>./s1515_h10.sh</b></th><th><b>./c1515_h10.sh</b></th><th><b>./t1515_h10.sh</b></th><th><b>./cs1515_h10.sh</b></th><th><b>./ts1515_h10.sh</b></th><th><b>./ct1515_h10.sh</b></th><th><b>./cts1515_h10.sh</b></th></tr>
+    <th>SP14->SP14</th>
+    <th>SP14->FA15</th>
+    <th>FA15->SP14</th>
+    <th>FA15->FA15</th>
+ </tr>
+ <tr>
+    <th>LOGISTIC</th>
+    <th>./cts1414_l.sh</th>
+    <th>./cts1415_l.sh</th>
+    <th>./cts1514_l.sh</th>
+    <th>./cts1515_l.sh</th>
+ </tr>
+ <tr>
+    <th>MLP-10</th>
+    <th>./cts1414_l.sh</th>
+    <th>./cts1415_l.sh</th>
+    <th>./cts1514_l.sh</th>
+    <th>./cts1515_l.sh</th>
+ </tr>
+ <tr>
+    <th>MLP500</th>
+    <th>./cts1414_l.sh</th>
+    <th>./cts1415_l.sh</th>
+    <th>./cts1514_l.sh</th>
+    <th>./cts1515_l.sh</th>
+ </tr>
 </table>
 <p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the two models <em>trained on dataset sp14</em> and <em>tested on dataset fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
