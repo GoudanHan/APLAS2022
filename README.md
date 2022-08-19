@@ -28,7 +28,7 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#training">Training NLP Language Model,<em> BERT</em>, through different methodologies for type error diagnosis.</a></li>
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
-<p>Since the datasets and Kaggle notebooks are stored online. The our artifact submitted on Zenodo will just be the virtual machine and scripts for generating the graphs, which contain size 4.71GB.</p>
+<p>Since the datasets and Kaggle notebooks are stored online. The our artifact submitted on Zenodo will just be the virtual machine and scripts for generating the graphs, which contain size 5.2GB.</p>
 <h2 id="training">Natrual language models' accruacies </h2>
 <h3>Environment Introduction & Setting up </h3>
 For this line of experiments, we used Kaggle notebook and its GPU accelerator to train the following models.
