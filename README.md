@@ -33,7 +33,7 @@ You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2
 Once you opened the notebook, on the right side, you can change the accelerator to GPU. Then you are all set to run the notebook! Just click on the Run All in the top menu bar and then the notebook will prompt you to enter a model's name. For now, the notebook supports training bert-small, bert-base, bert-large, codebert, and OCaml bert.
 
 <h3>Output</h3>
-After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models here: https://huggingface.co/GoudanHan
+After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models <a href="https://huggingface.co/GoudanHan"> here</a>.
 
 
 <h2 id="nate"> NATE's experiments under the new metric</h2>
@@ -115,7 +115,7 @@ source .venv/bin/activate
 <tr><th>fa15->sp14</th><th><b>./loc1514_h10.sh</b></th><th><b>./s1514_h10.sh</b></th><th><b>./c1514_h10.sh</b></th><th><b>./t1514_h10.sh</b></th><th><b>./cs1514_h10.sh</b></th><th><b>./ts1514_h10.sh</b></th><th><b>./ct1514_h10.sh</b></th><th><b>./cts1514_h10.sh</b></th></tr>
 <tr><th>fa15->fa15</th><th><b>./loc1515_h10.sh</b></th><th><b>./s1515_h10.sh</b></th><th><b>./c1515_h10.sh</b></th><th><b>./t1515_h10.sh</b></th><th><b>./cs1515_h10.sh</b></th><th><b>./ts1515_h10.sh</b></th><th><b>./ct1515_h10.sh</b></th><th><b>./cts1515_h10.sh</b></th></tr>
 </table>
-<p>Using the second rows of the first two tables, you can get something that looks similar to the graph demonstrated below, which reflects the performance of the two models <em>trained on dataset sp14</em> and <em>tested on dataset fa15</em>:</p>
+<p>Using the second rows of the first two tables, you can get something that looks similar to Figure 5 in our paper demonstrated below, which reflects the performance of the two models <em>trained on dataset sp14</em> and <em>tested on dataset fa15</em>:</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/90864900/184788168-0a4017d3-a288-4fb7-a9f1-a23e594f7a1c.png"></p>
 You can of course, try other dataset combinations using other commands in the tables.
 <p align="right"><a href="#header">↑Intro</a></p>
@@ -138,6 +138,11 @@ The final accuracy is 38.79%
 </pre>
 
 <h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look almost identical to us.
+Following these instructions, you can get the accuracy of any model/technique used by NATE under the new metric, and be perfectly capable of reproduce similar graphs demonstrated in our paper. You can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures' names in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look almost identical to us.
 </p>
+<ul>
+<li>Accuracy of Type Error Localization Techniques.py</li>
+<li>Impact of type error threshold on blame accuracy.py</li>
+<li>Impacts on training loss.py</li>
+</ul>
 <p align="right"><a href="#header">↑Intro</a></p>
