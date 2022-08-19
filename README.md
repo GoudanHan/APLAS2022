@@ -57,7 +57,7 @@ source .venv/bin/activate
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ---------------------------------
-<h3 id="features">   1. Feature Matters </h3>
+<h3 id="features">   1. Impact of features on Diagnosis Accuracy </h3>
 <br>
 <p>We provide command tables for the three models used by NATE for you. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <b>LOGISTIC</b>:
@@ -138,7 +138,7 @@ The final accuracy is 38.79%
 </pre>
 
 <h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model/technique used by NATE under <p>the new metric</p>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. You can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
+Following these instructions, you can get the accuracy of any model/technique used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
   <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
