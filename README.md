@@ -49,7 +49,7 @@ cd ~/Desktop/nate/
 source .venv/bin/activate
 ```
 <p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
-<p>For models, LOGISTIC, MLP-10 and MLP-500. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
+<p>For models, <em>LOGISTIC</em>, <em>MLP-10</em> and <em>MLP-500</em>. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
   <tr>
     <th></th>
@@ -80,8 +80,8 @@ source .venv/bin/activate
     <th>./cts1515_l.sh</th>
  </tr>
 </table>
-<p>As NATE claims that "+C(ontext)+T(ype)+S(ize)" is the most powerful feature combination in error blaming. Hence, these three are the features we use for NATE's models in all experiments of this work.</p>
-<p>To get diagnosis/blaming accuracy of the rest models including <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>, we provide you a python script . Type <pre>python ./computeAccuracy.py</pre> to run the script.
+<p>As NATE claims that <b>"+C(ontext)+T(ype)+S(ize)"</b> is the most powerful feature combination in error blaming. Hence, these three are the features we use for NATE's models in all experiments of this work.</p>
+<p>We provide you a python script to get diagnosis/blaming accuracy of NATE's other models including <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
 <br>
 Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do <b>put</b> <em>single or double quotation marks</em> besides you answers as shown in the following example to make sure they can be read by the script:
 <pre>
