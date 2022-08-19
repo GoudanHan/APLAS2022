@@ -8,10 +8,10 @@ Strong type system helps programmers to eliminate many errors without much burde
 <ul>
   <li><a href="#training">Kaggle Notebooks </a>
     <ol>
-      <li>Our machine learning models</li>
-      <li>NATE's dataset, SP14 and FA15</li>
-      <li><em>Dataset</em>: 20k OCaml programs written by beginners</li>
-      <li><em>Dataset</em>: 350k OCaml programs from GitHub</li>
+      <li><a href="#models">Our machine learning models</a></li>
+      <li><a href="https://huggingface.co/datasets/AllenGeng/NATEdataset">NATE's dataset, SP14 and FA15</a></li>
+      <li><a href="https://huggingface.co/datasets/AllenGeng/ocamlnoviceddata"><em>Dataset</em>: 20k OCaml programs written by beginners</a></li>
+      <li><a href="https://huggingface.co/datasets/AllenGeng/ocamlgithub"><em>Dataset</em>: 350k OCaml programs from GitHub</a></li>
     </ol>
   </li>
   <li><a href="#nate">Our Virtual Machine</a>
@@ -34,7 +34,7 @@ Strong type system helps programmers to eliminate many errors without much burde
 For this line of experiments, we used Kaggle notebook and its GPU accelerator to train the following models.
   
   
-<h3> Calculate models' accruacies directly </h3>  
+<h3 id ="models" > Calculate models' accruacies directly </h3>  
 Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> Inference</a>
 The notebook requires two input: model and tasks. And it currently support the following models:
 
@@ -83,8 +83,21 @@ The notebook requires two input: model and tasks. And it currently support the f
  </tr>
 </table>
 
+<h3>Usage</h3>
+To run the inference notebook, you’ll have to specify the model name and task at the start of the notebook running session. For now, we support the following inference of models: bert-small-14to15, bert-small-15to14, bert-medium-14to15, bert-medium-15to14, bert-base-14to15, bert-base-15to14, ocamlbert-large-14to15, ocamlbert-large-15to14, codebert-14to15, codebert-15to14.
 
-<h3>Randomness</h3>
+
+
+
+
+You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2/typeinference/edit">The notebook to train BERT-small, BERT-base, BERT-large, and CodeBERT</a>, <a href="https://www.kaggle.com/code/tianyuhan2/typeerrorinference0611/edit">The notebook to train OCamlBERT-large</a>, and <a href="https://www.kaggle.com/allengeng123/inference/edit">The notebook to directly calculate accruacy of models</a>.
+
+<h3>Turn on GPU</h3>
+Once you opened the notebook, on the right side, you can change the accelerator to GPU. Then you are all set to run the notebook! Just click on the Run All in the top menu bar and then the notebook will prompt you to enter a model's name. For now, the notebook supports training bert-small, bert-base, bert-large, codebert, and OCaml bert.
+
+
+
+<h3>Output</h3>
 After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models <a href="https://huggingface.co/GoudanHan"> here</a>.
 
 
