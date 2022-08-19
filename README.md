@@ -29,9 +29,13 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
 </ul>
 
-<h2 id="training">Natrual Language Model for type error diagnosis, run <a href="https://www.kaggle.com/allengeng123/inference/edit"> directly calculate accruacy of models</a>.
+<h2 id="training">Natrual language models' accruacies </h2>
 <h3>Environment Introduction & Setting up </h3>
 For this experiment, we used Kaggle notebook and its GPU accelerator to train the following models.
+  
+  
+  
+run <a href="https://www.kaggle.com/allengeng123/inference/edit"> directly calculate accruacy of models</a>
 The notebook currently support the following models:
 <ul>
   <li>BERT-small</li>
@@ -51,7 +55,7 @@ Once you opened the notebook, on the right side, you can change the accelerator 
 After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models <a href="https://huggingface.co/GoudanHan"> here</a>.
 
 
-<h2 id="nate"> NATE's experiments under the new metric</h2>
+<h2 id="nate"> NATE's models' accruacies (including OCaml and sherrloc) </h2>
 <h3>Environment Installation & Setting up </h3>
 <p> We provide an easy-to-use <a href="https://www.dropbox.com/s/nasq90j0p7jukbf/nate.ova?dl=0">VM</a>, an updated version of <a href="https://github.com/ucsd-progsys/nate">NATE</a>'s <a href="https://www.dropbox.com/s/b8a7nfwi8loiwvp/nate-artifact.ova?dl=0">virtual machine</a>, for people who want to reproduce NATE's experiments under the new metric. The user and password are both "<em>nate</em>".</p>
 <p>The VM should already have everything installed; however, it is possible that the graphical user interface of the VM fails to launch. We encountered the same issue while working on NATE's VM. The good news is you just need the terminal to run the experiments. Press
