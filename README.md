@@ -48,18 +48,8 @@ To activate the python virtualenv, type in the following commands:</b>
 cd ~/Desktop/nate/
 source .venv/bin/activate
 ```
-<p>As the VM is now ready to reproduce the results, let's recall NATE's experiments:</p>
-<ol>
-  <li><a href="#features">Blame/diagnosis accuracy of NATE's models</a></li>
-  <li><a href="#techniques">Blame/Diagnosis accuracy of different techniques</a></li>
-</ol>
-<p>The commands of running these experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
-<p align="right"><a href="#header">↑Intro</a></p>
-
----------------------------------
-<h3 id="features">   1. NATE's models under the new metric</h3>
-<br>
-<p>We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
+<p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
+<p>For models, LOGISTIC, MLP-10 and MLP-500. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
   <tr>
     <th></th>
@@ -83,19 +73,15 @@ source .venv/bin/activate
     <th>./cts1515_l.sh</th>
  </tr>
  <tr>
-    <th>MLP500</th>
+    <th>MLP-500</th>
     <th>./cts1414_l.sh</th>
     <th>./cts1415_l.sh</th>
     <th>./cts1514_l.sh</th>
     <th>./cts1515_l.sh</th>
  </tr>
 </table>
-<p>As NATE claims that "+C(ontext)+T(ype)+S(ize)" is the most powerful feature combination in error blaming. Hence, these three are the features we use for NATE's models in experiments of this work.</p>
-<p align="right"><a href="#header">↑Intro</a></p>
-
-------------------------------------------
-<h3 id="techniques"> 2. NATE's techniques under the new metric </h3>
-<p>We provide you a python script that you can use to get the diagnosis accuracy of different techniques, which includes <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
+<p>As NATE claims that "+C(ontext)+T(ype)+S(ize)" is the most powerful feature combination in error blaming. Hence, these three are the features we use for NATE's models in all experiments of this work.</p>
+<p>To get diagnosis/blaming accuracy of the rest models including <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>, we provide you a python script . Type <pre>python ./computeAccuracy.py</pre> to run the script.
 <br>
 Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do <b>put</b> <em>single or double quotation marks</em> besides you answers as shown in the following example to make sure they can be read by the script:
 <pre>
@@ -111,7 +97,7 @@ The final accuracy is 38.79%
 </pre>
 
 <h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model/technique used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
+Following these instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
   <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
