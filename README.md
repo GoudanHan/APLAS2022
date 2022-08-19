@@ -46,28 +46,28 @@ The notebook requires two input: model and tasks. And it currently support the f
  </tr>
  <tr>
     <th>BERT Small</th>
-    <th>model = "bert-small-14"; task="14to15"</th>
-    <th>model = "bert-small-15"; task="15to14"</th>
+    <th>model = "bert-small"; task="14to15"</th>
+    <th>model = "bert-small"; task="15to14"</th>
  </tr>
  <tr>
     <th>BERT Medium</th>
-    <th>model = "bert-medium-14"; task="14to15"</th>
-    <th>model = "bert-medium-15"; task="15to14"</th>
+    <th>model = "bert-medium"; task="14to15"</th>
+    <th>model = "bert-medium"; task="15to14"</th>
  </tr>
  <tr>
     <th>BERT Base</th>
-    <th>model = "bert-base-14"; task="14to15"</th>
-    <th>model = "bert-base-15"; task="15to14"</th>
+    <th>model = "bert-base"; task="14to15"</th>
+    <th>model = "bert-base"; task="15to14"</th>
  </tr>
  <tr>
     <th>CodeBert</th>
-    <th>model = "codebert-14"; task="14to15"</th>
-    <th>model = "codebert-15"; task="15to14"</th>
+    <th>model = "codebert"; task="14to15"</th>
+    <th>model = "codebert"; task="15to14"</th>
  </tr>
  <tr>
     <th>OCamlBert Large</th>
-    <th>model = "ocamlbert-large-14"; task="14to15"</th>
-    <th>model = "ocamlbert-large-15"; task="15to14"</th>
+    <th>model = "ocamlbert-large"; task="14to15"</th>
+    <th>model = "ocamlbert-large"; task="15to14"</th>
  </tr>
 </table>
 
