@@ -141,8 +141,8 @@ The final accuracy is 38.79%
 Following these instructions, you can get the accuracy of any model/technique used by NATE under <p>the new metric</p>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. You can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
-<li>Accuracy of Type Error Localization Techniques.py</li>
-<li>Impact of type error threshold on blame accuracy.py</li>
-<li>Impacts on training loss.py</li>
+  <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
+  <li><em>Impact of type error threshold on blame accuracy.py</em></li>
+  <li><em>Impacts on training loss.py</em></li>
 </ul>
 <p align="right"><a href="#header">↑Intro</a></p>
