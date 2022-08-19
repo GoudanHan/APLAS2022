@@ -16,8 +16,8 @@ Strong type system helps programmers to eliminate many errors without much burde
   </li>
   <li><a href="#nate">Our Virtual Machine</a>
     <ol>
-      <li><a href="#nate">NATE's models under the new metric</a></li>
-      <li><a href="#commands">Scripts and commands to get models' blame/diagnosis accuracy</a></li>
+      <li>NATE's models under the new metric</li>
+      <li>Scripts and commands to get models' blame/diagnosis accuracy</li>
     </ol>
   </li>
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
@@ -48,57 +48,45 @@ The notebook requires two input: model and tasks. And it currently support the f
  </tr>
  <tr>
     <th>BERT Small</th>
-    <th>model = "bert-small-14"; task=</th>
-    <th>model = "bert-small-15"; task=</th>
-    <th>model = "bert-small-14"; task=</th>
-    <th>model = "bert-small-15"; task=</th>
+    <th>model = "bert-small-14"; task="14to14"</th>
+    <th>model = "bert-small-15"; task="15to15"</th>
+    <th>model = "bert-small-14"; task="14to15"</th>
+    <th>model = "bert-small-15"; task="15to14"</th>
  </tr>
  <tr>
     <th>BERT Medium</th>
-    <th>model = "bert-medium-14"; task=</th>
-    <th>model = "bert-medium-15"; task=</th>
-    <th>model = "bert-medium-14"; task=</th>
-    <th>model = "bert-medium-15"; task=</th>
+    <th>model = "bert-medium-14"; task="14to14"</th>
+    <th>model = "bert-medium-15"; task="15to15"</th>
+    <th>model = "bert-medium-14"; task="14to15"</th>
+    <th>model = "bert-medium-15"; task="15to14"</th>
  </tr>
  <tr>
     <th>BERT Base</th>
-    <th>model = "bert-base-14"; task=</th>
-    <th>model = "bert-base-15"; task=</th>
-    <th>model = "bert-base-14"; task=</th>
-    <th>model = "bert-base-15"; task=</th>
+    <th>model = "bert-base-14"; task="14to14"</th>
+    <th>model = "bert-base-15"; task="15to15"</th>
+    <th>model = "bert-base-14"; task="14to15"</th>
+    <th>model = "bert-base-15"; task="15to14"</th>
  </tr>
  <tr>
     <th>CodeBert</th>
-    <th>model = "codebert-14"; task=</th>
-    <th>model = "codebert-15"; task=</th>
-    <th>model = "codebert-14"; task=</th>
-    <th>model = "codebert-15"; task=</th>
+    <th>model = "codebert-14"; task="14to14"</th>
+    <th>model = "codebert-15"; task="15to15"</th>
+    <th>model = "codebert-14"; task="14to15"</th>
+    <th>model = "codebert-15"; task="15to14"</th>
  </tr>
  <tr>
     <th>OCamlBert Large</th>
-    <th>model = "ocamlbert-large-14"; task=</th>
-    <th>model = "ocamlbert-large-15"; task=</th>
-    <th>model = "ocamlbert-large-14"; task=</th>
-    <th>model = "ocamlbert-large-15"; task=</th>
+    <th>model = "ocamlbert-large-14"; task="14to14"</th>
+    <th>model = "ocamlbert-large-15"; task="15to15"</th>
+    <th>model = "ocamlbert-large-14"; task="14to15"</th>
+    <th>model = "ocamlbert-large-15"; task="15to14"</th>
  </tr>
 </table>
 
-<h3>Usage</h3>
-To run the inference notebook, you’ll have to specify the model name and task at the start of the notebook running session. For now, we support the following inference of models: bert-small-14to15, bert-small-15to14, bert-medium-14to15, bert-medium-15to14, bert-base-14to15, bert-base-15to14, ocamlbert-large-14to15, ocamlbert-large-15to14, codebert-14to15, codebert-15to14.
 
+<h3>Randomness</h3>
+Please note the results are not stable due to randomness of initiliztion in training language models. Thus, we run each model three times and take the average. In the notebook, we provide only one instance of each model, thus you may observe some differecen bwtewwn the resukts to papers.
 
-
-
-
-You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2/typeinference/edit">The notebook to train BERT-small, BERT-base, BERT-large, and CodeBERT</a>, <a href="https://www.kaggle.com/code/tianyuhan2/typeerrorinference0611/edit">The notebook to train OCamlBERT-large</a>, and <a href="https://www.kaggle.com/allengeng123/inference/edit">The notebook to directly calculate accruacy of models</a>.
-
-<h3>Turn on GPU</h3>
-Once you opened the notebook, on the right side, you can change the accelerator to GPU. Then you are all set to run the notebook! Just click on the Run All in the top menu bar and then the notebook will prompt you to enter a model's name. For now, the notebook supports training bert-small, bert-base, bert-large, codebert, and OCaml bert.
-
-
-
-<h3>Output</h3>
-After the notebook finishes running, you can see the trained model files on the right side under the output directory (/kaggle/working). You can find the links to the models <a href="https://huggingface.co/GoudanHan"> here</a>.
 
 
 <h2 id="nate"> NATE's models' accruacies (including OCaml and sherrloc) </h2>
@@ -116,7 +104,7 @@ source .venv/bin/activate
 ---------------------------------
 <p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
 <p>For models, <em>LOGISTIC</em>, <em>MLP-10</em> and <em>MLP-500</em>. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
-<table id="commands" align="center">
+<table align="center">
   <tr>
     <th></th>
     <th>SP14->SP14</th>
