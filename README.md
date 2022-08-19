@@ -57,7 +57,7 @@ source .venv/bin/activate
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ---------------------------------
-<h3 id="features">   1. Diagnosis Accuracy of NATE's models under the new metric</h3>
+<h3 id="features">   1. NATE's models under the new metric</h3>
 <br>
 <p>We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
@@ -94,7 +94,7 @@ source .venv/bin/activate
 <p align="right"><a href="#header">↑Intro</a></p>
 
 ------------------------------------------
-<h3 id="techniques"> 2. Diagnosis Accuracy of NATE's techniques under the new metric </h3>
+<h3 id="techniques"> 2. NATE's techniques under the new metric </h3>
 <p>We provide you a python script that you can use to get the diagnosis accuracy of different techniques, which includes <em>decision tree, random forest, Sherrloc</em> and <em>OCaml compiler</em>. Type <pre>python ./computeAccuracy.py</pre> to run the script.
 <br>
 Some messages will display on the terminal asking you to <em>properly</em> type the technique and dataset you want to use. Do <b>put</b> <em>single or double quotation marks</em> besides you answers as shown in the following example to make sure they can be read by the script:
