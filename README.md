@@ -36,8 +36,8 @@ For this line of experiments, we used Kaggle notebook and its GPU accelerator to
   
   
 <h3 id ="models" > Calculate models' accruacies </h3>  
-Run <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference</a> 
-The notebook requires two input: model and tasks. And it currently support the following calculations:
+Run <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook.</a> 
+The notebook requires two input: model and task, which you need to select from the following table. And it currently support the following calculations:
 
 <table align="center">
   <tr>
