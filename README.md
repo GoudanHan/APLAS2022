@@ -6,7 +6,7 @@
 Strong type system helps programmers to eliminate many errors without much burden of supplying type annotations. However, this flexibility makes it highly non-trivial to diagnose the failure mode, especially for novice programmers.  Compared to classic constraint solving and optimization based approaches, the data-driven approach has shown great promise of identifying the root cause of type errors with high accuracy. Instead of relying on hand-engineered features, this work explores natural language models for type error localization, which can be trained in an end-to-end fashion without requiring any features. We demonstrate that, for novice type error diagnosis, language model based approach significantly outperforms the previous state-of-the-art data-driven approach. Specifically, our transformer model could predict type errors correctly 62% of the time, outperforming the <a href="https://arxiv.org/pdf/1708.07583.pdf">state-of-the-art NATE</a>'s data-driven model by 11%, in a more rigorous metric of accuracy measurement. Furthermore, we also apply structural probe to explain the performance difference of different language models. 
 </p> -->
 <ul>
-  <li>Kaggle Notebooks 
+  <li><a href="#training">Kaggle Notebooks </a>
     <ol>
       <li>Our machine learning models</li>
       <li>NATE's dataset, SP14 and FA15</li>
@@ -14,13 +14,13 @@ Strong type system helps programmers to eliminate many errors without much burde
       <li><em>Dataset</em>: 350k OCaml programs from GitHub</li>
     </ol>
   </li>
-  <li>Our Virtual Machine
+  <li><a href="#nate">Our Virtual Machine</a>
     <ol>
       <li>NATE's models under the new metric</li>
       <li>Scripts and commands to get models' blame/diagnosis accuracy</li>
     </ol>
   </li>
-  <li>Scripts for Generating Graphs</li>
+  <li><a href="#graph">Scripts for Generating Graphs</a></li>
 </ul>
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
@@ -113,8 +113,8 @@ The accuracy is on its way...
 The final accuracy is 38.79%
 </pre>
 
-<h3>Conclusion</h3>
-Following these instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
+<h3 id="graph">Graphs && Conclusion</h3>
+<p>Following these instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
   <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
