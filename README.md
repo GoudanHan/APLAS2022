@@ -31,11 +31,11 @@ Strong type system helps programmers to eliminate many errors without much burde
 
 <h2 id="training">Natrual language models' accruacies </h2>
 <h3>Environment Introduction & Setting up </h3>
-For this experiment, we used Kaggle notebook and its GPU accelerator to train the following models.
+For this line of experiments, we used Kaggle notebook and its GPU accelerator to train the following models.
   
   
-  
-run <a href="https://www.kaggle.com/allengeng123/inference/edit"> directly calculate accruacy of models</a>
+<h3> Calculate models' accruacies directly </h3>  
+Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> </a>
 The notebook currently support the following models:
 <ul>
   <li>BERT-small</li>
