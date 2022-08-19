@@ -17,7 +17,7 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#nate">Our Virtual Machine</a>
     <ol>
       <li>NATE's models under the new metric</li>
-      <li>Scripts and commands to get models' blame/diagnosis accuracy</li>
+      <li>Scripts and commands to get models' blame/diagnosis accuracy</li> 
     </ol>
   </li>
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
