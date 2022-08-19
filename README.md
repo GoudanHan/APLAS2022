@@ -85,7 +85,7 @@ The notebook requires two input: model and tasks. And it currently support the f
 
 
 <h3>Randomness</h3>
-Please note the results are not stable due to randomness of initiliztion in training language models. Thus, we run each model three times and take the average in our paper. In the notebook, we provide only one instance of each model, thus you may observe some differences compared to the results in our paper.
+Please note the results are not stable due to randomness of initiliztion in training language models. Thus, we run each model three times and take the average to put in our paper. In the notebook, we provide only one instance of each model, thus you may observe some differences compared to the results in our paper.
 
 
 
