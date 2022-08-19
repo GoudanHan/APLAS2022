@@ -35,7 +35,7 @@ For this line of experiments, we used Kaggle notebook and its GPU accelerator to
   
   
 <h3> Calculate models' accruacies directly </h3>  
-Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> </a>
+Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> Inference</a>
 The notebook currently support the following models:
 <ul>
   <li>BERT-small</li>
@@ -44,6 +44,13 @@ The notebook currently support the following models:
   <li>CodeBERT</li>
   <li>BERT-large pre-trained on OCaml</li>
 </ul>
+<h3>Usage</h3>
+To run the inference notebook, you’ll have to specify the model name and task at the start of the notebook running session. For now, we support the following inference of models: bert-small-14to15, bert-small-15to14, bert-medium-14to15, bert-medium-15to14, bert-base-14to15, bert-base-15to14, ocamlbert-large-14to15, ocamlbert-large-15to14, codebert-14to15, codebert-15to14.
+
+
+
+
+
 You can find the notebooks here: <a href="https://www.kaggle.com/code/tianyuhan2/typeinference/edit">The notebook to train BERT-small, BERT-base, BERT-large, and CodeBERT</a>, <a href="https://www.kaggle.com/code/tianyuhan2/typeerrorinference0611/edit">The notebook to train OCamlBERT-large</a>, and <a href="https://www.kaggle.com/allengeng123/inference/edit">The notebook to directly calculate accruacy of models</a>.
 
 <h3>Turn on GPU</h3>
