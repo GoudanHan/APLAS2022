@@ -37,13 +37,52 @@ For this line of experiments, we used Kaggle notebook and its GPU accelerator to
 <h3> Calculate models' accruacies directly </h3>  
 Run <a href="https://www.kaggle.com/allengeng123/inference/edit"> Inference</a>
 The notebook currently support the following models:
-<ul>
-  <li>BERT-small</li>
-  <li>BERT-medium</li>
-  <li>BERT-base</li>
-  <li>CodeBERT</li>
-  <li>BERT-large pre-trained on OCaml</li>
-</ul>
+
+<table align="center">
+  <tr>
+    <th></th>
+    <th>SP14->SP14</th>
+    <th>SP14->FA15</th>
+    <th>FA15->SP14</th>
+    <th>FA15->FA15</th>
+ </tr>
+ <tr>
+    <th>BERT Small</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+ </tr>
+ <tr>
+    <th>BERT Medium</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+ </tr>
+ <tr>
+    <th>BERT Base</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+ </tr>
+ <tr>
+    <th>CodeBert</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+ </tr>
+ <tr>
+    <th>OCamlBert Large</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+ </tr>
+</table>
+
 <h3>Usage</h3>
 To run the inference notebook, you’ll have to specify the model name and task at the start of the notebook running session. For now, we support the following inference of models: bert-small-14to15, bert-small-15to14, bert-medium-14to15, bert-medium-15to14, bert-base-14to15, bert-base-15to14, ocamlbert-large-14to15, ocamlbert-large-15to14, codebert-14to15, codebert-15to14.
 
