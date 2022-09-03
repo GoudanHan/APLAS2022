@@ -110,17 +110,17 @@ source .venv/bin/activate
  </tr>
  <tr>
     <th>MLP-10</th>
-    <th>./cts1414_l.sh</th>
-    <th>./cts1415_l.sh</th>
-    <th>./cts1514_l.sh</th>
-    <th>./cts1515_l.sh</th>
+    <th>./cts1414_h10.sh</th>
+    <th>./cts1415_h10.sh</th>
+    <th>./cts1514_h10.sh</th>
+    <th>./cts1515_h10.sh</th>
  </tr>
  <tr>
     <th>MLP-500</th>
-    <th>./cts1414_l.sh</th>
-    <th>./cts1415_l.sh</th>
-    <th>./cts1514_l.sh</th>
-    <th>./cts1515_l.sh</th>
+    <th>./cts1414_h.sh</th>
+    <th>./cts1415_h.sh</th>
+    <th>./cts1514_h.sh</th>
+    <th>./cts1515_h.sh</th>
  </tr>
 </table>
 <p>As NATE claims that <b>"+C(ontext)+T(ype)+S(ize)"</b> is the most powerful feature combination in error blaming. Hence, these three are the features we use for NATE's models in all experiments of this work.</p>
