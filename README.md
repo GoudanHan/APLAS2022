@@ -93,7 +93,7 @@ The notebook requires two input: model and task, which you need to select from t
 
 <h4 id="local"> Run the notebook on your own computer </h4>
 <ol>
-  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly.</li>
+  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly. Since we don't have various GPUs and we don't know what kind of errors would show up while running with a different GPU.</li>
   <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt. (There is more than one way to install these packages. More details can be found at https://pytorch.org/get-started/locally/).
   <p align="center">
   <img src="Image/condaprompt.png" width="800" title="hover text" alt="Installing packages.">
