@@ -83,7 +83,8 @@ The notebook requires two input: model and task, which you need to select from t
 <h4 id="online"> Run the notebook on Kaggle </h4>
 <ol>
   <li>First, make sure that you have a Kaggle account. (Free and convenient to create one.)</li>
-  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and on the right side bar, click on the accelerator and choose GPU as your accelerator. Every account has ~30 hours of GPU quota so running on Kaggle is completely free.</li>
+  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, on the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.</li>
+  <li>If your account is already phone verified, the Settings menu should look like this picture. Then, under Accelerator, click on GPU. Also, make sure that the Internet switch is on.</li>
   <li>Run the notebook, enter the inputs as prompted, and get the results!</li>
 </ol>
 
