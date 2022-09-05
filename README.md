@@ -105,7 +105,7 @@ The notebook requires two input: model and task, which you need to select from t
   <img src="Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
   </p>
   </li>
-  <li>Click Upload and upload your local inference notebook, along with the .zip file containing input data files. Make sure that they are in the same directory. Don't unzip the file since our notebook will try to unzip it for you while running. (If they are not in the same directory, you may have to change the code in the notebook so that the notebook can find the .zip file and unzip it.)</li>
+  <li>Click Upload and upload your local inference notebook, along with the .zip file containing input data files. (The  <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-7fa4ae.ipynb">notebook</a> and the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Data/archive.zip">.zip file containing input data files</a> could be found at this repository.) Make sure that they are in the same directory. Don't unzip the file since our notebook will try to unzip it for you while running. (If they are not in the same directory, you may have to change the code in the notebook so that the notebook can find the .zip file and unzip it.)</li>
   <li>Open the notebook and click Cell -> Run All. Enter the inputs as prompted and get the results!
   <p align="center">
   <img src="Image/runlocally.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
