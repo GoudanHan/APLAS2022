@@ -27,7 +27,7 @@ Strong type system helps programmers to eliminate many errors without much burde
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
   <li><a href="#training">Natural Language models' accuracies.</a></li>
-  <li><a href="#nate">Redo NATE's experiments under the <em>new metric</em>.</a></li>
+  <li><a href="#nate">Redo NATE's experiment under the <em>new metric</em>.</a></li>
 </ul>
 
 <h2 id="training">Natrual language models' accruacies </h2>
