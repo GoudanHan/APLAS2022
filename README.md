@@ -83,7 +83,7 @@ The notebook requires two input: model and task, which you need to select from t
 <h4 id="online"> Run the notebook on Kaggle </h4>
 <ol>
   <li>First, make sure that you have a Kaggle account. (Free and convenient to create one.)</li>
-  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in. Then, on the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
+  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in. Then, in the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
   <p align="center">
   <img src="Image/sidebar.png" width="800" title="hover text" alt="Sidebar before phone verified..">
   </p>
