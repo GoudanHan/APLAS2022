@@ -39,6 +39,14 @@ For this line of experiments, we used Kaggle notebook and its GPU accelerator to
 Run <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook.</a> 
 The notebook requires two input: model and task, which you need to select from the following table. And it currently support the following calculations:
 
+<h4 id="local"> Run the notebook on your own computer </h4>
+<ol>
+  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly.</li>
+  <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge in your Anaconda Prompt (more details can be found at https://pytorch.org/get-started/locally/)</li>
+  <li>On our end, when running the notebook, we have encountered two problems. Firstly, since we had only ran the notebook on Kaggle instead of locally, activating the GPU accelerator was not successful at first. After we installed the newest PyTorch package along with cudatoolkit, this problem was solved. The other problem was that when training the model, in the last cell, at the line outputs = model(b_input_ids, token_type_ids=None,  attention_mask=b_input_mask, labels=b_labels), a runtime error message was displayed, saying "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for "Int". We suspect that this is due to the GPU we used locally was different from the one on Kaggle. To solve this issue, we added the line b_labels = b_labels.to(torch.int64) right before this line, to do a type casting before feeding the input labels into the model.</li>
+  <li>Run the notebook and get the results!</li>
+</ol>
+
 <table align="center">
   <tr>
     <th></th>
