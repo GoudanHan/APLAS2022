@@ -105,8 +105,14 @@ The notebook requires two input: model and task, which you need to select from t
   <img src="Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
   </p>
   </li>
+  <li>Click Upload and upload your local inference notebook, along with the .zip file containing input data files. Make sure that they are in the same directory. Don't unzip the file since our notebook will try to unzip it for you while running. (If they are not in the same directory, you may have to change the code in the notebook so that the notebook can find the .zip file and unzip it.)</li>
+  <li>Open the notebook and click Cell -> Run All. Enter the inputs as prompted and get the results!
+  <p align="center">
+  <img src="Image/runlocally.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
+  </p>
+  
+  </li>
   <li>On our end, when running the notebook, we have encountered two problems. Firstly, since we had only ran the notebook on Kaggle instead of locally, activating the GPU accelerator was not successful at first. After we installed the newest PyTorch package along with cudatoolkit, this problem was solved. The other problem was that when training the model, in the last cell, at the line <pre>outputs = model(b_input_ids, token_type_ids=None,  attention_mask=b_input_mask, labels=b_labels)</pre>, a runtime error message was displayed, saying "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for "Int". We suspect that this is due to the GPU we used locally was different from the one on Kaggle. To solve this issue, we added the line <pre>b_labels = b_labels.to(torch.int64)</pre> right before this line, to do a type casting before feeding the input labels into the model.</li>
-  <li>Run the notebook, enter the inputs as prompted, and get the results!</li>
 </ol>
 
 
