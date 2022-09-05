@@ -77,15 +77,14 @@ The notebook requires two input: model and task, which you need to select from t
   <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly.</li>
   <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt. (More details can be found at https://pytorch.org/get-started/locally/).</li>
   <li>On our end, when running the notebook, we have encountered two problems. Firstly, since we had only ran the notebook on Kaggle instead of locally, activating the GPU accelerator was not successful at first. After we installed the newest PyTorch package along with cudatoolkit, this problem was solved. The other problem was that when training the model, in the last cell, at the line <pre>outputs = model(b_input_ids, token_type_ids=None,  attention_mask=b_input_mask, labels=b_labels)</pre>, a runtime error message was displayed, saying "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for "Int". We suspect that this is due to the GPU we used locally was different from the one on Kaggle. To solve this issue, we added the line <pre>b_labels = b_labels.to(torch.int64)</pre> right before this line, to do a type casting before feeding the input labels into the model.</li>
-  <li>Run the notebook and get the results!</li>
+  <li>Run the notebook, enter the inputs as prompted, and get the results!</li>
 </ol>
 
 <h4 id="online"> Run the notebook on Kaggle </h4>
 <ol>
   <li>First, make sure that you have a Kaggle account. (Free and convenient to create one.)</li>
-  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and on the right side, click on the accelerator.</li>
-  <li></li>
-  <li></li>
+  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and on the right side bar, click on the accelerator and choose GPU as your accelerator. Every account has ~30 hours of GPU quota so running on Kaggle is completely free.</li>
+  <li>Run the notebook, enter the inputs as prompted, and get the results!</li>
 </ol>
 
 
