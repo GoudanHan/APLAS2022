@@ -78,7 +78,7 @@ To run either notebook, the user requires to provide inputs which are names of m
 
 <h4 id="online"> Run the notebook on Kaggle </h4>
 <ol>
-  <li>First, make sure that you have a Kaggle account. (Free and convenient to create one.)</li>
+  <li>First, make sure that you have a Kaggle account. (Free and easy to create one.)</li>
   <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in.</li>
   <li>In the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
   <p align="center">
