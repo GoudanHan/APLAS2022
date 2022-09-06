@@ -22,12 +22,13 @@ Strong type system helps programmers to eliminate many errors without much burde
   </li>
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
 </ul>
-<p>Since the datasets and Kaggle notebooks are stored online, and the virtual machine is public to anyone on Dropbox. The our artifact submitted on Zenodo will just be the scripts for generating the graphs, which contain size less than 1M.</p>
+
+<p><b>size of the partifact package to be specified here...</b></p>
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
-  <li><a href="#training">Natural Language models' accuracies.</a></li>
-  <li><a href="#nate">Redo NATE's experiment under the <em>new metric</em>.</a></li>
+  <li><a href="#training">Natural Language models' accuracies on type error diagnosis</a></li>
+  <li><a href="#nate">Redo NATE's experiment under the <em>new metric</em></a></li>
 </ul>
 
 <h2 id="training">Natrual language models' accruacies </h2>
@@ -40,8 +41,7 @@ There are two ways to reproduce this line of experiments:
   
   
 <h3 id ="models" > Calculate models' accruacies </h3>  
-Run <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook.</a> 
-The notebook requires two input: model and task, which you need to select from the following table. And it currently support the following calculations:
+To run either notebook, the user requires to provide inputs which are names of model and task as specified from the following table:
 
 <table align="center">
   <tr>
@@ -79,32 +79,34 @@ The notebook requires two input: model and task, which you need to select from t
 <h4 id="online"> Run the notebook on Kaggle </h4>
 <ol>
   <li>First, make sure that you have a Kaggle account. (Free and convenient to create one.)</li>
-  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in. Then, in the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
+  <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in.</li>
+  <li>In the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
   <p align="center">
   <img src="Image/sidebar.png" width="800" title="hover text" alt="Sidebar before phone verified..">
   </p>
   
   
   </li>
-  <li>If your account is already phone verified, the Settings menu should look like this picture below. Then, under Accelerator, click on GPU. Also, make sure that the Internet switch is on.
+  <li>If your account has now been phone verified, the Settings menu should look like this picture below. Then, under <em>the Accelerator button</em>, click on GPU. Also, make sure that <em>the Internet switch is on</em>.
   <p align="center">
   <img src="Image/sidebarafter.png" width="800" title="hover text" alt="Sidebar after phone verified.">
   </p>
   
   </li>
-  <li>Run the notebook, enter the inputs as prompted, and get the results!</li>
+  <li>Run the notebook, enter the inputs under the corresponding cells, and get the results!</li>
 </ol>
 
 <h4 id="local"> Run the notebook on your own computer </h4>
 <ol>
-  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly. Since we don't have various GPUs and we don't know what kind of errors would show up while running with a different GPU.</li>
-  <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt. (There is more than one way to install these packages. More details can be found at https://pytorch.org/get-started/locally/).
+  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly.
+  </li>
+  <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt. (There are more than one ways to install these packages. If the one we use does not work on your machine, feel free to check more on <a href="https://pytorch.org/get-started/locally/">this website</a>).
   <p align="center">
   <img src="Image/condaprompt.png" width="800" title="hover text" alt="Installing packages.">
   </p>
   
   </li>
-  <li>Then, open Jupyter Notebook installed on your local computer. (If there is not, please install Anaconda first. More details can be found at https://www.anaconda.com/). After loading, your default browser would show up with a page looking like this:
+  <li>Once PyTorch has been installed, open Jupyter Notebook installed on your local computer. (If there is not, please install Anaconda first. More details can be found at https://www.anaconda.com/). After loading, your default browser would show up with a page looking like this:
   <p align="center">
   <img src="Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
   </p>
