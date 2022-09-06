@@ -41,7 +41,7 @@ There are two ways to reproduce this line of experiments:
   
   
 <h3 id ="models" > Calculate models' accruacies </h3>  
-To run either notebook, the user requires to provide inputs which are names of model and task as specified from the following table:
+To run the notebook using either method, the user requires to provide the names of model and task under cells 3 and 4. Legal inputs are specified as in the following table:
 
 <table align="center">
   <tr>
@@ -51,28 +51,28 @@ To run either notebook, the user requires to provide inputs which are names of m
  </tr>
  <tr>
     <th>BERT Small</th>
-    <th>model = "bert-small"; task="14to15"</th>
-    <th>model = "bert-small"; task="15to14"</th>
+    <th>model = bert-small; task=14to15</th>
+    <th>model = bert-small; task=15to14</th>
  </tr>
  <tr>
     <th>BERT Medium</th>
-    <th>model = "bert-medium"; task="14to15"</th>
-    <th>model = "bert-medium"; task="15to14"</th>
+    <th>model = bert-medium; task=14to15</th>
+    <th>model = bert-medium; task=15to14</th>
  </tr>
  <tr>
     <th>BERT Base</th>
-    <th>model = "bert-base"; task="14to15"</th>
-    <th>model = "bert-base"; task="15to14"</th>
+    <th>model = bert-base; task=14to15</th>
+    <th>model = bert-base; task=15to14</th>
  </tr>
  <tr>
     <th>CodeBert</th>
-    <th>model = "codebert"; task="14to15"</th>
-    <th>model = "codebert"; task="15to14"</th>
+    <th>model = codebert; task=14to15</th>
+    <th>model = codebert; task=15to14</th>
  </tr>
  <tr>
     <th>OCamlBert Large</th>
-    <th>model = "ocamlbert-large"; task="14to15"</th>
-    <th>model = "ocamlbert-large"; task="15to14"</th>
+    <th>model = ocamlbert-large; task=14to15</th>
+    <th>model = ocamlbert-large; task=15to14</th>
  </tr>
 </table>
 
