@@ -197,11 +197,21 @@ The final accuracy is 38.79%
 
 
 <h2 id="graph">Graphs && Conclusion</h2>
-<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be perfectly capable of reproduce similar graphs demonstrated in our paper. As every time you execute the command or the script, the final accuracy may differ slightly,but the results you will get is going to look <b>almost identical</b> to us. For those who are interested in our graphs and data, you can find the following Python scripts in our artifact submission via <a href="https://zenodo.org/record/7008941#.Yv8aXxzMJPY">Zenodo Link</a>, which the names of them corresponds to the figures 5 to 7 in our paper. 
+<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be capable of reproduce similar graphs of accuracy as demonstrated in our paper. You are yet not able to produce some other graphs and expriments such as getting the training loss of Bert variant models or training your own OCamlBert. For those who are interested in this, we provide you <a href="https://www.kaggle.com/haolinnye/inference-for-model-training">another kaggle notebook</a>.
+  <br>
+  If you want to run it locally on your machine. It is the same process as you did in <a href="#local">this section</a>.
+ </p>
+
+----------------------
+<p>
+  To generate the graphs in our paper,you can use the following Python scripts in our artifact submission via <a href="https://zenodo.org/record/7008941#.Yv8aXxzMJPY">Zenodo Link</a>, which the names of them corresponds to the figures 5 to 7 in our paper. 
 </p>
 <ul>
   <li><em>Accuracy of Type Error Localization Techniques.py</em></li>
   <li><em>Impact of type error threshold on blame accuracy.py</em></li>
   <li><em>Impacts on training loss.py</em></li>
 </ul>
+<p>
+  We add detailed instructions inside of each python script specifying the commands or the methods of getting those data; however, with the this readme instruction, you should be able to reproduce all the experiments we have done in this work.
+</p>
 <p align="right"><a href="#header">↑Intro</a></p>
