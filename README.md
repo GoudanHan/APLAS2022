@@ -35,8 +35,8 @@ Strong type system helps programmers to eliminate many errors without much burde
 <h3>Environment Introduction & Setting up </h3>
 There are two ways to reproduce this line of experiments:
   <ul>
-  <li>Run virtually on Kaggle notebook with its GPU accelerator</li>
-  <li>Run locally with Jupyter notebooks</li>
+  <li><a href="#online">Run virtually on Kaggle notebook with its GPU accelerator</a></li>
+  <li><a href="#local">Run locally through Jupyter notebooks</a></li>
   </ul>
   
   
@@ -96,6 +96,7 @@ To run the notebook using either method, the user requires to provide the name o
   <li>Run the notebook, enter the inputs under the corresponding cells, and get the results!</li>
 </ol>
 
+<p align="right"><a href="#header">↑Intro</a></p>
 <h4 id="local"> Run the notebook on your own computer </h4>
 <ol>
   <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to modify the notebook accordingly.
@@ -118,7 +119,7 @@ To run the notebook using either method, the user requires to provide the name o
   
   </li>
  </ol>
- <h3>Possible Issue while running this notebook locally</h3>
+ <h4>Possible Issue while running this notebook locally</h3>
   <p>On our side, when running the notebook, we have encountered two problems.
   <br>
   We did not activate the GPU accelerator successful at first. This problem was easily solved after we installed the newest PyTorch package along with cudatoolkit.
@@ -130,7 +131,7 @@ To run the notebook using either method, the user requires to provide the name o
 <h3>Randomness</h3>
 Please note the results are not stable due to randomness of initiliztion in training language models. Thus, we run each model three times and take the average to put in our paper. In the notebook, we provide only one instance of each model, thus you may observe some differences compared to the results in our paper.
 
-
+<p align="right"><a href="#header">↑Intro</a></p>
 
 <h2 id="nate"> NATE's models' accruacies (including OCaml and sherrloc) </h2>
 <h3>Environment Installation & Setting up </h3>
