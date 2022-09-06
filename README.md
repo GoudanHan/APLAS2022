@@ -197,9 +197,27 @@ The final accuracy is 38.79%
 
 
 <h2 id="graph">Graphs && Conclusion</h2>
-<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be capable of reproduce similar graphs of accuracy as demonstrated in our paper. You are yet not able to produce some other graphs and expriments such as getting the training loss of Bert variant models or training your own OCamlBert. For those who are interested in this, we provide you <a href="https://www.kaggle.com/haolinnye/inference-for-model-training">another kaggle notebook</a>.
+<p>Following the above instructions, you can get the accuracy of any model used by NATE under <em>the new metric</em>, and be capable of reproduce similar graphs of accuracy as demonstrated in our paper. You may have trouble to produce some other graphs and expriments such as getting models' diagnosis accuracy with different threshold and the training loss of Bert variant models.
+ <br>
+  To get accuracy of model with different threshold of determining whether a token is an error, you can find in the end of <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit">the notebook</a> you used at <a href="#training">the section above</a>, we acutally printed out these accuracies for you in the form:
+ <pre>When threshold equals to 0.0, model's diagnosis accuracy evaluates to 19.233%
+When threshold equals to 0.1, model's diagnosis accuracy evaluates to 54.216%
+...
+When threshold equals to 0.9, model's diagnosis accuracy evaluates to 47.552%</pre>
+  <br>For those who are interested in training loss and training our OCamlBert model and its variants, we provide you <a href="https://www.kaggle.com/haolinnye/inference-for-model-training">another kaggle notebook</a>.
   <br>
   If you want to run it locally on your machine. It is the same process as you did in <a href="#local">this section</a>.
+  <br>
+  The training loss will then be printed out under the cell for training, which looks like:
+  <pre>
+    Epoch:   0% 0/30 
+    Average train loss: 0.05409879609942436
+    Epoch:   3% 1/30 
+    Validation loss: 0.1798801148259962
+    ...
+    Epoch: 100%30/30 
+    Validation loss: 0.24333246082470222
+  </pre>
  </p>
 
 ----------------------
