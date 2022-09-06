@@ -41,7 +41,7 @@ There are two ways to reproduce this line of experiments:
   
   
 <h3 id ="models" > Calculate models' accruacies </h3>  
-To run the notebook using either method, the user requires to provide the names of model and task under cells 3 and 4. Legal inputs are specified as in the following table:
+To run the notebook using either method, the user requires to provide the name of model and task under cell 3 and 4. Legal inputs are specified as in the following table:
 
 <table align="center">
   <tr>
@@ -82,14 +82,14 @@ To run the notebook using either method, the user requires to provide the names 
   <li>Then, go to <a href="https://www.kaggle.com/code/tianyuhan2/inference-7fa4ae/edit"> Inference notebook </a> and click on Copy & Edit. Once you are in the notebook, log in.</li>
   <li>In the right side bar, click on the Settings menu. If your account is yet to be phone verified, it should look like this picture below. Click on the <b>Get Phone Verified</b> and verify your account using your phone number.
   <p align="center">
-  <img src="Image/sidebar.png" width="800" title="hover text" alt="Sidebar before phone verified..">
+  <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/sidebar.png" width="800" title="hover text" alt="Sidebar before phone verified..">
   </p>
   
   
   </li>
   <li>If your account has now been phone verified, the Settings menu should look like this picture below. Then, under <em>the Accelerator button</em>, click on GPU. Also, make sure that <em>the Internet switch is on</em>.
   <p align="center">
-  <img src="Image/sidebarafter.png" width="800" title="hover text" alt="Sidebar after phone verified.">
+  <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/sidebarafter.png" width="800" title="hover text" alt="Sidebar after phone verified.">
   </p>
   
   </li>
@@ -98,28 +98,33 @@ To run the notebook using either method, the user requires to provide the names 
 
 <h4 id="local"> Run the notebook on your own computer </h4>
 <ol>
-  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to change the codes accordingly.
+  <li>We used NVIDIA GeForce GTX 1650 as the GPU accelerator. If you have a different GPU, you may have to modify the notebook accordingly.
   </li>
-  <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt. (There are more than one ways to install these packages. If the one we use does not work on your machine, feel free to check more on <a href="https://pytorch.org/get-started/locally/">this website</a>).
+  <li>Before running the notebook, please make sure that PyTorch along with cudatoolkit has been installed. To install, run <pre>conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge</pre> in your Anaconda Prompt (There are more than one ways to install these packages. If the one we use does not work on your machine, feel free to get more details on <a href="https://pytorch.org/get-started/locally/">this website</a>). For details of installing Anaconda Prompt, please visite <a href="https://www.anaconda.com/">here</a>.
   <p align="center">
-  <img src="Image/condaprompt.png" width="800" title="hover text" alt="Installing packages.">
+  <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/condaprompt.png" width="800" title="hover text" alt="Installing packages.">
+  </p>
+  </li>
+  <li>Once PyTorch has been installed, open Jupyter Notebook installed on your local browser. After loading, your default browser would show up with a page looking like this:
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
+  </p>
+  </li>
+  <li>Click <em>Upload</em> to upload your local inference notebook, along with the .zip file containing input data files. (The  <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-7fa4ae.ipynb">local version notebook</a> and the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Data/archive.zip">.zip file containing input data files</a> could be found at this repository.) Make sure that they are in the same directory. <b>Don't unzip the file since our notebook will try to unzip it for you while running.</b></li>
+  <li>Open the notebook and click <em>Cell -> Run All</em>. Enter the inputs as prompted and get the results!
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/runlocally.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
   </p>
   
   </li>
-  <li>Once PyTorch has been installed, open Jupyter Notebook installed on your local computer. (If there is not, please install Anaconda first. More details can be found at https://www.anaconda.com/). After loading, your default browser would show up with a page looking like this:
-  <p align="center">
-  <img src="Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
-  </p>
-  </li>
-  <li>Click Upload and upload your local inference notebook, along with the .zip file containing input data files. (The  <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-7fa4ae.ipynb">local version notebook</a> and the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Data/archive.zip">.zip file containing input data files</a> could be found at this repository.) Make sure that they are in the same directory. Don't unzip the file since our notebook will try to unzip it for you while running. (If they are not in the same directory, you may have to change the code in the notebook so that the notebook can find the .zip file and unzip it.)</li>
-  <li>Open the notebook and click Cell -> Run All. Enter the inputs as prompted and get the results!
-  <p align="center">
-  <img src="Image/runlocally.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
-  </p>
-  
-  </li>
-  <li>On our end, when running the notebook, we have encountered two problems. Firstly, since we had only ran the notebook on Kaggle instead of locally, activating the GPU accelerator was not successful at first. After we installed the newest PyTorch package along with cudatoolkit, this problem was solved. The other problem was that when training the model, in the last cell, at the line <pre>outputs = model(b_input_ids, token_type_ids=None,  attention_mask=b_input_mask, labels=b_labels)</pre>, a runtime error message was displayed, saying "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for "Int". We suspect that this is due to the GPU we used locally was different from the one on Kaggle. To solve this issue, we added the line <pre>b_labels = b_labels.to(torch.int64)</pre> right before this line, to do a type casting before feeding the input labels into the model.</li>
-</ol>
+ </ol>
+ <h3>Possible Issue while running this notebook locally</h3>
+  <p>On our side, when running the notebook, we have encountered two problems.
+  <br>
+  We did not activate the GPU accelerator successful at first. This problem was easily solved after we installed the newest PyTorch package along with cudatoolkit.
+  <br>
+  The other problem was that when training the models, in the last cell, at the line <pre>outputs = model(b_input_ids, token_type_ids=None,  attention_mask=b_input_mask, labels=b_labels)</pre>, a runtime error message was displayed, saying "nll_loss_forward_reduce_cuda_kernel_2d_index" not implemented for "Int". We suspect that this is due to the GPU we used locally was different from the one on Kaggle. To solve this issue, we added the line <pre>b_labels = b_labels.to(torch.int64)</pre> right before this line, to do a type casting before feeding the input labels into the model, which eventually solved the problem.</li>
+
 
 
 <h3>Randomness</h3>
@@ -141,7 +146,7 @@ cd ~/Desktop/nate/
 source .venv/bin/activate
 ```
 ---------------------------------
-<p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. <b>Notice: It is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</b></p>
+<p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. As mention in the Randomness section, it is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</p>
 <p>For models, <em>LOGISTIC</em>, <em>MLP-10</em> and <em>MLP-500</em>. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
   <tr>
