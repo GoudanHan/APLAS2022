@@ -16,8 +16,8 @@ Strong type system helps programmers to eliminate many errors without much burde
   </li>
   <li><a href="#nate">Our Virtual Machine</a>
     <ol>
-      <li>NATE's models under the new metric</li>
-      <li>Scripts and commands to get models' blame/diagnosis accuracy</li> 
+      <li><a href="#nate">NATE's models under the new metric</a></li>
+      <li><a href="#scripts">Scripts and commands to get models' blame/diagnosis accuracy</a></li> 
     </ol>
   </li>
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
@@ -148,7 +148,7 @@ source .venv/bin/activate
 ```
 ---------------------------------
 <p>VM is now ready to reproduce the results. The commands of running the experiments are given in the following sections. As mention in the Randomness section, it is possible that accuracy of the same command <em>differ slightly</em> every time you execute it.</p>
-<p>For models, <em>LOGISTIC</em>, <em>MLP-10</em> and <em>MLP-500</em>. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
+<p id="scripts">For models, <em>LOGISTIC</em>, <em>MLP-10</em> and <em>MLP-500</em>. We provide you commands for getting the new accuracy of the three ML models used by NATE. Each command takes about <em>10 to 30 minutes</em> to output the <em>final accuracy</em>, which relates to the number of features that you want the model to focus on.</p>
 <table align="center">
   <tr>
     <th></th>
