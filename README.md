@@ -206,7 +206,7 @@ When threshold equals to 0.1, model's diagnosis accuracy evaluates to 54.216%
 When threshold equals to 0.9, model's diagnosis accuracy evaluates to 47.552%</pre>
   <br>For those who are interested in training loss and training our OCamlBert model and its variants, we provide you <a href="https://www.kaggle.com/haolinnye/inference-for-model-training">another kaggle notebook</a>.
   <br>
-  If you want to run it locally on your machine. It is the same process as you did in <a href="#local">this section</a>.
+  If you want to run it locally on your machine, you can download the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-for-model-training.ipynb">local version training notebook</a> from this repository. It is the same process as you did in <a href="#local">this section</a>.
   <br>
   The training loss will then be printed out under the cell for training, which looks like:
   <pre>
