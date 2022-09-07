@@ -111,7 +111,7 @@ To run the notebook using either method, the user requires to provide the name o
   <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/jupyter.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
   </p>
   </li>
-  <li>Click <em>Upload</em> to upload your local inference notebook, along with the .zip file containing input data files. (The  <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-7fa4ae.ipynb">local version notebook</a> and the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Data/archive.zip">.zip file containing input data files</a> could be found at this repository.) Make sure that they are in the same directory. <b>Don't unzip the file since our notebook will try to unzip it for you while running.</b></li>
+  <li>Click <em>Upload</em> to upload your local inference notebook, along with the .zip file containing input data files. (The  <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Script/inference-7fa4ae-final.ipynb">local version notebook</a> and the <a href="https://github.com/GoudanHan/APLAS2022/blob/main/Data/archive.zip">.zip file containing input data files</a> could be found at this repository.) Make sure that they are in the same directory. <b>Don't unzip the file since our notebook will try to unzip it for you while running.</b></li>
   <li>Open the notebook and click <em>Cell -> Run All</em>. Enter the inputs as prompted and get the results!
   <p align="center">
   <img src="https://raw.githubusercontent.com/GoudanHan/APLAS2022/main/Image/runlocally.png" width="800" title="hover text" alt="Homepage of Jupyter Notebook.">
