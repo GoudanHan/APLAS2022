@@ -23,7 +23,7 @@ Strong type system helps programmers to eliminate many errors without much burde
   <li><a href="#graph">Scripts for Generating Graphs</a></li>
 </ul>
 
-<p><b>size of the partifact package to be specified here...</b></p>
+<p>The size of the partifact package is 5.1 Gb.</p>
 <h2> Experiments </h2>
 <p>Recall the two main experiments we've done in this work.</p>
 <ul>
